@@ -13,18 +13,19 @@ class GenerateCardNumbers
     private Integer digits;
     private String password1;
     private String password2;
+    private long voteridbase;
+    ArrayList <String> numsList = new ArrayList<String>();
 
     public GenerateCardNumbers(String password1, String password2, int numCards, int digits) {
         createLookupTable();
         this.password1 = password1;
         this.password2 = password2;
-        long voteridbase = hash(password1);
-        Integer numcards = new Integer(password2);
-        genCardNumbers(voteridbase, numcards, digits);
+        voteridbase = hash(password1);
+        genCardNumbers(voteridbase, numCards, digits);
+        printList();
     }
 
-    private ArrayList genCardNumbers(long voteridbase, Integer numcards, int digits) {
-        ArrayList <String> numsList = new ArrayList<String>();
+    public void genCardNumbers(long voteridbase, int numcards, int digits) {
         String format = "%0" + digits + "d %04d";
         for(int i=1;i<=numcards;i++)
         { long k=hash(password2 +i+ ","+ password1) +voteridbase  ;
@@ -33,7 +34,6 @@ class GenerateCardNumbers
             voteridbase++;
             voteridbase= voteridbase %1000000000000000L;
         }
-        return numsList;
     }
 
 
@@ -66,4 +66,12 @@ class GenerateCardNumbers
         }
         return byteTable;
     }
+    public void printList(){
+        for(String elem : numsList){
+            System.out.println(elem+"  ");
+        }
+    }
+
+
 }
+
