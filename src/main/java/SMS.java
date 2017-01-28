@@ -1,9 +1,9 @@
 public class SMS {
 
-    String card="", PIN="", option="";
-    String fromnumber="";
-    boolean validSMS=false;
-    String originalsms="";
+    private String card="", PIN="", option="";
+    private String fromnumber="";
+    private boolean validSMS=false;
+    private String originalsms="";
 
 
     public SMS() {
@@ -27,8 +27,6 @@ public class SMS {
             return false;
         }
     }
-
-
 
     public void print() {
         if (validSMS)
