@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -23,6 +24,31 @@ class GenerateCardNumbers
         voteridbase = hash(password1);
         genCardNumbers(voteridbase, numCards, digits);
         printList();
+
+    }
+
+    private void writeToFile() {
+        File file = new File("./nums.txt");
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(file.getAbsoluteFile());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        BufferedWriter bw = new BufferedWriter(fw);
+
+        for (String s : numsList) {
+            try {
+                bw.write(s + System.getProperty("line.separator"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void genCardNumbers(long voteridbase, int numcards, int digits) {
@@ -34,6 +60,7 @@ class GenerateCardNumbers
             voteridbase++;
             voteridbase= voteridbase %1000000000000000L;
         }
+        writeToFile();
     }
 
 

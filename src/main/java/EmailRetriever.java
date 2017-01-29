@@ -3,7 +3,7 @@ import javax.mail.search.FlagTerm;
 import java.util.ArrayList;
 import java.util.Properties;
 
-public class RetrieveVotes {
+public class EmailRetriever {
 
     private static final String SMTP_HOST_NAME = "pop.gmail.com";
     private static final String SMTP_PORT = "995";
@@ -78,7 +78,7 @@ public class RetrieveVotes {
     public static void main(String [] args) {
         if (args.length>0) VERBOSE=true;
         try {
-            RetrieveVotes.readMessages();
+            EmailRetriever.readMessages();
         }
         catch (Exception ee) {
             ee.printStackTrace();
