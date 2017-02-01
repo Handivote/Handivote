@@ -1,11 +1,12 @@
+import java.util.ArrayList;
 
 public class Question {
     private int qid;
     private int refID;
     private String questionString;
-    private QuestionOption[] options;
+    private ArrayList<QuestionOption> options;
 
-    public Question(int qid, int refID, String questionString, QuestionOption[] options) {
+    public Question(int qid, int refID, String questionString, ArrayList<QuestionOption> options) {
         this.qid = qid;
         this.refID = refID;
         this.questionString = questionString;
@@ -36,12 +37,10 @@ public class Question {
         this.questionString = questionString;
     }
 
-    public QuestionOption[] getOptions() {
+    public ArrayList<QuestionOption> getOptions() {
         return options;
     }
 
-    public void setOptions(QuestionOption[] options) {
-        this.options = options;
-    }
+
 
 }

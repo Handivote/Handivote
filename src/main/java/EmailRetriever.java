@@ -47,7 +47,8 @@ public class EmailRetriever {
         Folder inbox = store.getFolder("Inbox");
         inbox.open(Folder.READ_WRITE);
         FlagTerm ft = new FlagTerm(new Flags(Flags.Flag.SEEN), false);
-        Message messages[] = new Message[0];
+        //Message messages[] = new Message[0];
+        Message messages[] =  MockEmailRetriever.getMails();
         try {
             messages = inbox.search(ft);
             for (Message m : messages){

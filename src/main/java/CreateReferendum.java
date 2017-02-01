@@ -12,18 +12,23 @@ import java.util.concurrent.ConcurrentMap;
 
 
 class CreateReferendum {
-    private UUID refId = UUID.randomUUID() ;
+
+
+    private UUID refId;
     private String fName;
     private Question question;
 
+
     CreateReferendum(String fName, Question question) {
+        this.refId = UUID.randomUUID();
         this.fName = fName;
         this.question = question;
         setupDB();
+
     }
 
      private ArrayList<String> readCardNums(){
-        ArrayList <String> numbers = new ArrayList<String>();
+        ArrayList <String> numbers = new ArrayList<>();
         try {
             for (String line : Files.readAllLines(Paths.get(fName))) {
                     numbers.add(line);
@@ -36,7 +41,7 @@ class CreateReferendum {
 
     private void setupDB() {
         ArrayList <String> numbers;
-        DB db = DBMaker.fileDB("file.db").fileMmapEnable().make();
+        DB db = DBMaker.fileDB(refId + ".db").fileMmapEnable().make();
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
         numbers = readCardNums();
         for (String num : numbers) {
@@ -54,6 +59,8 @@ class CreateReferendum {
             System.out.println("" + num + " : " + map.get(num));
         }
         db.close();
-
+    }
+    public UUID getRefId() {
+        return refId;
     }
 }
