@@ -9,13 +9,18 @@ import java.util.ArrayList;
  */
 class GenerateCardNumbers
 {
-    /*
-    */
+
     private Integer digits;
     private String password1;
     private String password2;
     private long voteridbase;
     ArrayList <String> numsList = new ArrayList<String>();
+    
+    public static ArrayList getNumsList(String password1, String password2, int numCards, int digits) {
+        ArrayList <String> staticNumsList = new ArrayList<String>();
+        GenerateCardNumbers gn = new GenerateCardNumbers( password1,  password2,  numCards, digits);
+        return staticNumsList;
+    }
 
     public GenerateCardNumbers(String password1, String password2, int numCards, int digits) {
         createLookupTable();

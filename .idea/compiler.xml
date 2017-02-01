@@ -9,8 +9,8 @@
         <module name="new_handivote" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="new_handivote" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="new_handivote" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
