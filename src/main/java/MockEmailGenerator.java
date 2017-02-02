@@ -32,7 +32,7 @@ public class MockEmailGenerator {
 
     // add a random vote from (1,2,3,4, yes, no, [invalid])    -weighted towards 1 & 2
     private String addRandomVote(){
-        String [] voteArray = {"1","2","1","2","1","2","yes", "no", "yes", "1","1","1","2","2"};
+        String [] voteArray = {"1","2","1","2","1","2","1", "1", "1", "1","1","1","2","2"};
         Random rnd = new Random();
         int rndInt = rnd.nextInt(voteArray.length);
         //System.out.println(voteArray.length);

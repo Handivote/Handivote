@@ -28,7 +28,7 @@ class GenerateCardNumbers
         this.password2 = password2;
         voteridbase = hash(password1);
         genCardNumbers(voteridbase, numCards, digits);
-        printList();
+        //printList();
 
     }
 

@@ -30,7 +30,7 @@ public class MockEmailRetriever  {
 
 
 
-        public void stopServer() {
+        public static void stopServer() {
             mailServer.stop();
         }
 
@@ -65,7 +65,7 @@ public class MockEmailRetriever  {
 
                 // use greenmail to store the message
                 user.deliver(message);
-                System.out.println("delivered message from : " +  message.getFrom().toString());
+                //System.out.println("delivered message from : " +  message.getFrom()[0].toString());
             }
             // fetch the e-mail via imaps using javax.mail ..
             Properties props = new Properties();
@@ -76,10 +76,16 @@ public class MockEmailRetriever  {
             Store store = session.getStore(urlName);
             store.connect();
 
+            FetchProfile fetchProfile = new FetchProfile();
+            fetchProfile.add(FetchProfile.Item.ENVELOPE);
             Folder folder = store.getFolder("INBOX");
             folder.open(Folder.READ_ONLY);
+            Message[] messages = folder.getMessages();
+
+            folder.fetch(messages, fetchProfile);
+
             //System.out.println(folder.getMessageCount());
-            return folder.getMessages();
+            return messages;
         }
 
 

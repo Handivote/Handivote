@@ -49,7 +49,7 @@ class CreateReferendum {
         }
         db.commit();
         db.close();
-        testPrint(numbers);
+        //testPrint(numbers);
     }
 
      private void testPrint(ArrayList<String> numbers){

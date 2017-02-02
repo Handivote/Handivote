@@ -1,7 +1,7 @@
 
 public class VoteParser {
 
-    private static final boolean VERBOSE = true;
+    private static final boolean VERBOSE = false;
 
     public static Details extractDetails(String str) {
 
