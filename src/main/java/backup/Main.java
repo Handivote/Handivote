@@ -1,3 +1,5 @@
+package backup;
+
 import javax.mail.Message;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ public class Main {
 
         //setup referendum
         // cards
-        int numCards = 5000000;
+        int numCards = 5000;
         GenerateCardNumbers gcn = new GenerateCardNumbers("password1", "wordpass2", numCards, 4);
         ArrayList <Details> voteDetails = new ArrayList<Details>();
         ArrayList <String> voteList = null;
@@ -36,8 +38,10 @@ public class Main {
                 e.printStackTrace();
             }
             for (int i =0 ; i<numCards; i++) {
-                Details d = VoteParser.extractDetails(voteList.get(i));
-                voteDetails.add(d);
+                String[] arr = (String[]) voteList.toArray();
+                System.out.println(arr[i].toString());
+                //Details d = VoteParser.extractDetails(voteList.get(i));
+                //voteDetails.add(d);
             }
 
         }

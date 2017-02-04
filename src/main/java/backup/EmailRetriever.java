@@ -1,3 +1,5 @@
+package backup;
+
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
 import java.util.ArrayList;
