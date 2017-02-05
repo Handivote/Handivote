@@ -1,3 +1,4 @@
+/*
 package backup;
 
 import javax.mail.*;
@@ -50,7 +51,7 @@ public class EmailRetriever {
         inbox.open(Folder.READ_WRITE);
         FlagTerm ft = new FlagTerm(new Flags(Flags.Flag.SEEN), false);
         //Message messages[] = new Message[0];
-        Message messages[] =  MockEmailRetriever.getMails(); // remove after testing is complete
+       // Message messages[] =  MockEmailRetriever.getMails(); // remove after testing is complete
         try {
             messages = inbox.search(ft);
             for (Message m : messages){
@@ -89,4 +90,4 @@ public class EmailRetriever {
         System.exit(0);
 
     }
-}
+}*/

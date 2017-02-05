@@ -2,14 +2,12 @@ package FilterPattern;
 
 import java.util.Date;
 
-/**
- * Created by p on 04/02/17.
- */
+
 public class Vote {
     private String voterID;
     private String voterPIN;
     private Date timestamp;
-    private String QuestionID;
+    private String questionID;
     private String [] ballot;
 
 
@@ -17,7 +15,7 @@ public class Vote {
         this.voterID = voterID;
         this.voterPIN = voterPIN;
         this.timestamp = timestamp;
-        QuestionID = questionID;
+        this.questionID = questionID;
         this.ballot = ballot;
     }
 
@@ -34,7 +32,7 @@ public class Vote {
     }
 
     public String getQuestionID() {
-        return QuestionID;
+        return questionID;
     }
 
     public String[] getBallot() {

@@ -1,23 +1,9 @@
 package backup;
 
-import com.icegreen.greenmail.user.GreenMailUser;
-import com.icegreen.greenmail.user.UserException;
-import com.icegreen.greenmail.util.DummySSLSocketFactory;
-import com.icegreen.greenmail.util.GreenMail;
-import com.icegreen.greenmail.util.ServerSetupTest;
-
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.io.IOException;
-import java.security.Security;
-import java.util.ArrayList;
-import java.util.Properties;
-
 /**
  * Created by p on 29/01/17.
  */
-public class MockEmailRetriever  {
+public class MockEmailRetriever  {/*
 
         private static final String USER_PASSWORD = "handivote";
         private static final String USER_NAME = "handivote";
@@ -91,5 +77,6 @@ public class MockEmailRetriever  {
         }
 
 
-    }
 
+
+*/}

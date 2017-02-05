@@ -1,3 +1,4 @@
+/*
 package backup;
 
 import javax.mail.Message;
@@ -84,3 +85,4 @@ public class Main {
     //todo record votes
     //todo calculate results
 }
+*/
