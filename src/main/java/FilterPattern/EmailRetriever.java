@@ -1,12 +1,13 @@
-/*
-package backup;
+
+package FilterPattern;
+
+import backup.VoteParser;
 
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
-import java.util.ArrayList;
-import java.util.Properties;
+import java.util.*;
 
-public class EmailRetriever {
+public class EmailRetriever implements VoteCollector {
 
     private static final String SMTP_HOST_NAME = "pop.gmail.com";
     private static final String SMTP_PORT = "995";
@@ -14,7 +15,7 @@ public class EmailRetriever {
     private static final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 
 
-    private static boolean VERBOSE=true;
+    private static boolean VERBOSE = true;
     private static Session session;
     private static Store store;
     private static ArrayList emails;
@@ -37,11 +38,12 @@ public class EmailRetriever {
 
         //create the IMAPS store object and connect with the smtp server
         store = session.getStore("imaps");
+        // todo encrypt password in config files
         store.connect("imap.gmail.com", "handivote.testing@gmail.com", "poppop12");
         return session;
     }
 
-    static Message [] readMessages() throws Exception {
+    static Message[] readMessages() throws Exception {
 
         if (session == null) setupSession();
         //System.out.println(store);
@@ -50,20 +52,19 @@ public class EmailRetriever {
         Folder inbox = store.getFolder("Inbox");
         inbox.open(Folder.READ_WRITE);
         FlagTerm ft = new FlagTerm(new Flags(Flags.Flag.SEEN), false);
-        //Message messages[] = new Message[0];
-       // Message messages[] =  MockEmailRetriever.getMails(); // remove after testing is complete
+        Message messages[] = new Message[0];
+        // Message messages[] =  MockEmailRetriever.getMails(); // remove after testing is complete
         try {
             messages = inbox.search(ft);
-            for (Message m : messages){
-                System.out.println (m.getFrom().length+ " " + m.getContent());
+            for (Message m : messages) {
+                System.out.println(m.getFrom().length + " " + m.getContent());
                 emails.add(VoteParser.extractDetails(m.getSubject() + m.getContent()));
 
             }
         } catch (MessagingException e) {
             e.printStackTrace();
             e.getMessage();
-        }
-        finally {
+        } finally {
             // retrieve the messages from the folder in an array and print it
             System.out.println(messages.length + " Messages in inbox");
             close();
@@ -79,15 +80,42 @@ public class EmailRetriever {
         }
     }
 
-    public static void main(String [] args) {
-        if (args.length>0) VERBOSE=true;
+    public static void main(String[] args) {
+        if (args.length > 0) VERBOSE = true;
         try {
             EmailRetriever.readMessages();
-        }
-        catch (Exception ee) {
+        } catch (Exception ee) {
             ee.printStackTrace();
         }
         System.exit(0);
 
     }
-}*/
+
+    @Override
+    public void collectVotes(UUID refID)  {
+        RawVoteRecorder rawVoteRecorder = new RawVoteRecorder(refID);
+        Message[] ballots = null;
+        try {
+            ballots = readMessages();
+            for (int i=0; i<ballots.length; i++){
+                long timestamp = new Date().getTime();
+                String[] content = ((String) ballots[i].getContent()).split(" ");
+                String[] optionsBallot = Arrays.copyOfRange(content, 3, content.length);
+                Vote vote = new Vote(content[1], content[2], timestamp, "", optionsBallot);
+                rawVoteRecorder.recordVote(vote);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally{
+            rawVoteRecorder.closeDB();
+        }
+    }
+
+
+    @Override
+    public void sendAck() {
+
+    }
+}
+

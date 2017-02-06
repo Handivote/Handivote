@@ -1,17 +1,17 @@
 package FilterPattern;
 
-import java.util.Date;
+import java.util.Arrays;
 
 
 public class Vote {
     private String voterID;
     private String voterPIN;
-    private Date timestamp;
+    private long timestamp;
     private String questionID;
     private String [] ballot;
 
 
-    public Vote(String voterID, String voterPIN, Date timestamp, String questionID, String[] ballot) {
+    public Vote(String voterID, String voterPIN, long timestamp, String questionID, String[] ballot) {
         this.voterID = voterID;
         this.voterPIN = voterPIN;
         this.timestamp = timestamp;
@@ -27,7 +27,7 @@ public class Vote {
         return voterPIN;
     }
 
-    public Date getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
@@ -39,4 +39,14 @@ public class Vote {
         return ballot;
     }
 
+    @Override
+    public String toString() {
+        return "Vote{" +
+                "voterID='" + voterID + '\'' +
+                ", voterPIN='" + voterPIN + '\'' +
+                ", timestamp=" + timestamp +
+                ", questionID='" + questionID + '\'' +
+                ", ballot=" + Arrays.toString(ballot) +
+                '}';
+    }
 }

@@ -12,9 +12,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.IOException;
 import java.security.Security;
-import java.util.ArrayList;
-import java.util.Properties;
-import java.util.UUID;
+import java.util.*;
 
 public class CollectMockEmails implements VoteCollector{
 
@@ -95,12 +93,11 @@ public class CollectMockEmails implements VoteCollector{
         try {
              ballots = getMails();
             for (int i=0; i<ballots.length; i++){
-                try {
-                    String str = ballots[i].getSubject() + ballots[i].getContent();
-                    rawVoteRecorder.recordVote(str);
-                } catch (MessagingException | IOException e) {
-                    e.printStackTrace();
-                }
+                long timestamp = new Date().getTime();
+                String[] content = ((String) ballots[i].getContent()).split(" ");
+                String[] ballot = Arrays.copyOfRange(content, 3, content.length);
+                Vote vote = new Vote(content[1], content[2], timestamp, "", ballot);
+                rawVoteRecorder.recordVote(vote);
             }
         } catch (IOException | MessagingException | UserException | InterruptedException e) {
             e.printStackTrace();
@@ -108,5 +105,10 @@ public class CollectMockEmails implements VoteCollector{
         finally{
             rawVoteRecorder.closeDB();
         }
+    }
+
+    @Override
+    public void sendAck() {
+
     }
 }

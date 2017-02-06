@@ -22,11 +22,11 @@ public class MockEmailGenerator {
         while ((line = br.readLine()) != null) {
             arr = new String[3];
             arr[0] = generateMobileNumber();
-            arr[1] = line + " ";
+            arr[1] = " " + line + " ";
             arr[2] = addRandomVote();
             //voteList.add([generateMobileNumber(), " "+ line + " ", addRandomVote())];
             voteList.add(arr);
-            //System.out.println(arr[0] + arr [1] + arr[2]);
+            System.out.println(arr[0] + arr [1] + arr[2]);
         }
         br.close();
         //System.out.println(voteList);
