@@ -115,6 +115,7 @@ public class EmailRetriever implements VoteCollector {
 
     @Override
     public void sendAck() {
+        //TODO
 
     }
 }

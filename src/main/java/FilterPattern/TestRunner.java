@@ -1,12 +1,6 @@
 package FilterPattern;
 
 
-import org.mapdb.DB;
-import org.mapdb.DBMaker;
-import org.mapdb.HTreeMap;
-import org.mapdb.Serializer;
-
-import java.util.Set;
 import java.util.UUID;
 
 public class TestRunner {
@@ -15,20 +9,19 @@ public class TestRunner {
 
 
     public static void main(String[] args){
-        int numCards = 500;
-        GenerateCardNumbers gcn = new GenerateCardNumbers("password1", "wordpass2", numCards, 4);
+        int numCards = 100;
         refID = UUID.randomUUID();
-        CollectMockEmails mockEmails = new CollectMockEmails();
-        mockEmails.collectVotes(refID);
-        mockEmails.stopServer();
+        GenerateCardNumbers gcn = new GenerateCardNumbers("password1", "wordpass2", numCards, 4);
+        StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.numsList);
+        scn.storeCardNumbers();
+        //CollectMockEmails mockEmails = new CollectMockEmails();
+        //mockEmails.collectVotes(refID);
+        //mockEmails.stopServer();
         System.out.println("done");
-        DB db = DBMaker.fileDB(refID + ".raw").make();
-        HTreeMap<Integer, String> map = db.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
-        Set<Integer> keys = map.getKeys();
-        Object[] arr = keys.toArray();
-        for ( int i=0; i<keys.size (); i++){
-            System.out.println(map.get(arr[i]));
-        }
+        //DB db = DBMaker.fileDB(refID + ".raw").make();
+
+        //Validator validator = new Validator(refID);
+        //validator.validateVotes();
 
     }
 }

@@ -13,7 +13,7 @@ import java.util.UUID;
 public class RawVoteRecorder {
     private UUID refID;
     private DB db;
-    private  Vote vote;
+    private Vote vote;
 
 
     public RawVoteRecorder(UUID refID) {
@@ -32,7 +32,7 @@ public class RawVoteRecorder {
 
     public boolean recordVote(Vote vote){
         HTreeMap<Integer, String> map = db.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
-        map.put(vote.hashCode() ,vote.toString());
+        map.put(vote.hashCode(), vote.toString());
         db.commit();
         return true;
     }
