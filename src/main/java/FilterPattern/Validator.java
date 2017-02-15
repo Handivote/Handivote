@@ -27,8 +27,16 @@ public class Validator {
         Set<Integer> keys = map.getKeys();
         Object[] arr = keys.toArray();
         for ( int i=0; i<keys.size (); i++){
-            System.out.println(map.get(arr[i]));
+            System.out.println(arr[i]);
+            System.out.println(map.get(arr[i]) + " : mapget");
+            Object foo = map.remove(arr[i]);
+            System.out.println("foo : " + foo.toString());
         }
+        db.commit();
+        db.close();
+        setupDB(refID);
+        HTreeMap<Integer, String> map2 = db.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
+        System.out.println(map2.values());
     }
     //TODO  check card number from vote against .nums map
 
