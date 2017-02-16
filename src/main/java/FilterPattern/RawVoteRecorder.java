@@ -31,9 +31,9 @@ public class RawVoteRecorder {
     }
 
     public boolean recordVote(Vote vote){
-        HTreeMap<Integer, String> map = db.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
+        HTreeMap<Long, String> map = db.hashMap("map", Serializer.LONG, Serializer.STRING).createOrOpen();
 
-        map.put(vote.hashCode(), vote.toString());
+        map.put(vote.getTimestamp(), vote.toString());
         db.commit();
         return true;
     }

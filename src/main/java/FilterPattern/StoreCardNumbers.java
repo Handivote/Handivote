@@ -25,7 +25,7 @@ public class StoreCardNumbers {
         db = DBMaker.fileDB(refId + ".nums").fileMmapEnable().make();
         return db;
     }
-    public void storeCardNumbers(){
+    public boolean storeCardNumbers(){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
         for (int i=0; i<numsList.size(); i++){
             String str = (String) numsList.get(i);
@@ -33,8 +33,8 @@ public class StoreCardNumbers {
             map.put(parts[0], parts[1]);
             System.out.println("added " +numsList.get(i));
         }
-
-
-
+        db.commit();
+        db.close();
+        return true;
     }
 }

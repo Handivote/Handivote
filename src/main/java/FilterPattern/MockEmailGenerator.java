@@ -37,7 +37,6 @@ public class MockEmailGenerator {
         String [] voteArray = {"1","2","1","2","1","2","1", "1", "1", "1","1","1","2","2"};
         Random rnd = new Random();
         int rndInt = rnd.nextInt(voteArray.length);
-        //System.out.println(voteArray.length);
         return voteArray[rndInt];
 
     }

@@ -1,5 +1,7 @@
 package FilterPattern;
 
+import jdk.nashorn.api.scripting.JSObject;
+
 import java.util.Arrays;
 
 
@@ -18,6 +20,7 @@ public class Vote {
         this.questionID = questionID;
         this.ballot = ballot;
     }
+
 
     public String getVoterID() {
         return voterID;
@@ -39,8 +42,8 @@ public class Vote {
         return ballot;
     }
 
-    @Override
-    public String toString() {
+
+    public String toJSONString() {
         return "Vote{" +
                 "voterID='" + voterID + '\'' +
                 ", voterPIN='" + voterPIN + '\'' +
@@ -48,5 +51,9 @@ public class Vote {
                 ", questionID='" + questionID + '\'' +
                 ", ballot=" + Arrays.toString(ballot) +
                 '}';
+    }
+    @Override
+    public String toString() {
+        return "" + voterID + " " + voterPIN + " " + timestamp + " " + questionID + " " + Arrays.toString(ballot);
     }
 }

@@ -95,8 +95,8 @@ public class CollectMockEmails implements VoteCollector{
             for (int i=0; i<ballots.length; i++){
                 long timestamp = new Date().getTime();
                 String[] content = ((String) ballots[i].getContent()).split(" ");
-                String[] ballot = Arrays.copyOfRange(content, 3, content.length);
-                Vote vote = new Vote(content[1], content[2], timestamp, "", ballot);
+                String[] ballot = Arrays.copyOfRange(content, 4, content.length);
+                Vote vote = new Vote(content[1], content[2], timestamp, "1", ballot);
                 rawVoteRecorder.recordVote(vote);
             }
         } catch (IOException | MessagingException | UserException | InterruptedException e) {
