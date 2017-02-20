@@ -35,22 +35,23 @@ public class Validator {
             String voterID = numsMap.get(parts[0]);
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
             if(vote.getVoterPIN().equals(numsMap.get(vote.getVoterID()))){
+                vote.resetVoterPIN();
                 System.out.println(vote.toJSONString() + " validated");
 
             }
             else{
-                System.out.println( " process bad vote");
+                System.out.println(vote.toJSONString() + " \n processed bad vote");
             }
             //Object foo = map.remove(arr[i]);
             //System.out.println("foo : " + foo.toString());
         }
-        //voteDB.commit();
+        voteDB.commit();
         voteDB.close();
         //setupDB(refID);
         //HTreeMap<Integer, String> map2 = voteDB.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
         //System.out.println(map2.values());
     }
 
-    //TODO  check card number from vote against .nums map
+
 
 }

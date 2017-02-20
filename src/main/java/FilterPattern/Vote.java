@@ -1,7 +1,5 @@
 package FilterPattern;
 
-import jdk.nashorn.api.scripting.JSObject;
-
 import java.util.Arrays;
 
 
@@ -29,6 +27,10 @@ public class Vote {
     public String getVoterPIN() {
         return voterPIN;
     }
+
+    protected void resetVoterPIN(){
+        voterPIN = "";
+    };
 
     public long getTimestamp() {
         return timestamp;
