@@ -1,10 +1,11 @@
 package FilterPattern;
 
-import java.util.Date;
-import java.util.UUID;
+public class ReferendumFactory {
+    private String configFile;
 
+    public static Referendum readConfig(String configFile){
 
-public interface ReferendumFactory {
-    UUID createReferendum(Date startDate, Date endDate, Question question, VoteCollector collector);
-    void publishResults(UUID refId);
+        return null;
+    }
+
 }
