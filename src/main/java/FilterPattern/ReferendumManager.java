@@ -2,19 +2,36 @@ package FilterPattern;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.Properties;
 
 public class ReferendumManager {
+    private static ArrayList <String> props;
+
     public static void main(String[] args) {
+        String fName = "";
+        if(args.length >0){
+            fName = args[0];
+        }
+        else{
+            fName = "test.properties";
+        }
+
+        readProperties(fName);
         ReferendumFactory rf = new ReferendumFactory();
+        Referendum referendum = rf.createReferendum("simple");
+
+
+    }
+
+    private static void readProperties(String fName) {
         try {
-            File file = new File("test.properties");
+            File file = new File(fName);
             FileInputStream fileInput = new FileInputStream(file);
             Properties properties = new Properties();
             properties.load(fileInput);
@@ -30,8 +47,6 @@ public class ReferendumManager {
                 String value = properties.getProperty(key);
                 System.out.println(key + ": " + value);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,6 +57,7 @@ public class ReferendumManager {
         try {
             Date sDate = format.parse(startDate);
             Date eDate = format.parse(endDate);
+
             System.out.println(sDate + " Dates " + eDate);
         } catch (ParseException e) {
             e.printStackTrace();
