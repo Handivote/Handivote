@@ -36,32 +36,43 @@ public class ReferendumManager {
             Properties properties = new Properties();
             properties.load(fileInput);
             String pattern = properties.getProperty("dates.pattern");
-            String startDate = properties.getProperty("startDate");
-            String endDate = properties.getProperty("endDate");
-            setDates(pattern, startDate, endDate);
+            String startDateStr = properties.getProperty("startDate");
+            String endDateStr = properties.getProperty("endDate");
+            String refType = properties.getProperty("refType");
+            Question[] questions;
+            for ( int i =0; i < new Integer(properties.getProperty("numberOfQuestions"));i++){
+                ArrayList <QuestionOption> options = new ArrayList<>();
+                for(int j = 1; j<= new Integer(properties.getProperty("numberOfOptions")); j++){
+                    options.add(new QuestionOption(""+ j ,"" + j,  properties.getProperty("questionOption"+ j)));
+                }
+                Question question = new Question(1, 0, properties.getProperty("question1"), options );
+                //questions[i]=
+                System.out.println(question.toString());
+            }
+            Date startDate = setDates(pattern, startDateStr);
+            Date endDate = setDates(pattern, endDateStr);
             fileInput.close();
 
             Enumeration enuKeys = properties.keys();
             while (enuKeys.hasMoreElements()) {
                 String key = (String) enuKeys.nextElement();
                 String value = properties.getProperty(key);
-                System.out.println(key + ": " + value);
+                //System.out.println(key + ": " + value);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static void setDates(String pattern, String startDate, String endDate) {
+    private static Date setDates(String pattern, String dateStr) {
         SimpleDateFormat format = new SimpleDateFormat(pattern);
+        Date date = null;
         try {
-            Date sDate = format.parse(startDate);
-            Date eDate = format.parse(endDate);
-
-            System.out.println(sDate + " Dates " + eDate);
+            date = format.parse(dateStr);
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        return date;
     }
 
 }

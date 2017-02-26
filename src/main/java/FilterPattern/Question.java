@@ -6,6 +6,9 @@ public class Question {
     private int qid;
     private int refID;
     private String questionString;
+
+
+
     private ArrayList<QuestionOption> options;
 
     public Question(int qid, int refID, String questionString, ArrayList<QuestionOption> options) {
@@ -43,6 +46,14 @@ public class Question {
         return options;
     }
 
-
+    @Override
+    public String toString() {
+        return "Question{" +
+                "qid=" + qid +
+                ", refID=" + refID +
+                ", questionString='" + questionString + '\'' +
+                ", options=" + options.toString() +
+                '}';
+    }
 
 }
