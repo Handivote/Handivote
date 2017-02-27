@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.security.Security;
 import java.util.*;
 
-public class CollectMockEmails implements VoteCollector{
+public class MockEmailCollector implements VoteCollector{
 
     private static final String USER_PASSWORD = "handivote";
     private static final String USER_NAME = "handivote";

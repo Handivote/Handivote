@@ -34,7 +34,7 @@ public class ReferendumManager {
             e.printStackTrace();
         }
         System.out.println(properties.stringPropertyNames());
-        rf.createReferendum(properties);
+        rf.buildReferendum(properties);
         try {
             fileInput.close();
         } catch (IOException e) {

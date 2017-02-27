@@ -7,7 +7,7 @@ import javax.mail.*;
 import javax.mail.search.FlagTerm;
 import java.util.*;
 
-public class EmailRetriever implements VoteCollector {
+public class EmailCollector implements VoteCollector {
 
     private static final String SMTP_HOST_NAME = "pop.gmail.com";
     private static final String SMTP_PORT = "995";
@@ -83,7 +83,7 @@ public class EmailRetriever implements VoteCollector {
     public static void main(String[] args) {
         if (args.length > 0) VERBOSE = true;
         try {
-            EmailRetriever.readMessages();
+            EmailCollector.readMessages();
         } catch (Exception ee) {
             ee.printStackTrace();
         }
