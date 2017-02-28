@@ -9,23 +9,23 @@ import org.mapdb.Serializer;
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class StoreCardNumbers {
+class StoreCardNumbers {
 
     private ArrayList numsList;
     private UUID refID;
     private DB db;
 
-    public StoreCardNumbers(UUID refID, ArrayList numsList) {
+    StoreCardNumbers(UUID refID, ArrayList numsList) {
         this.refID = refID;
         this.db = setupDB(refID);
         this.numsList = numsList;
 
     }
     private DB setupDB(UUID refId){
-        db = DBMaker.fileDB(refId + ".nums").fileMmapEnable().make();
+        db = DBMaker.fileDB(refId + ".register").fileMmapEnable().make();
         return db;
     }
-    public boolean storeCardNumbers(){
+    void storeCardNumbers(){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
         for (int i=0; i<numsList.size(); i++){
             String str = (String) numsList.get(i);
@@ -35,6 +35,6 @@ public class StoreCardNumbers {
         }
         db.commit();
         db.close();
-        return true;
+
     }
 }

@@ -103,6 +103,7 @@ public class MockEmailCollector implements VoteCollector{
             e.printStackTrace();
         }
         finally{
+            stopServer();
             rawVoteRecorder.closeDB();
         }
     }

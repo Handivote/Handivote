@@ -2,6 +2,7 @@ package FilterPattern;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.UUID;
 
 /**
  * The class is given two passwords to provide randomisation of the PIN sequence
@@ -14,28 +15,35 @@ class GenerateCardNumbers
 
     private Integer digits;
     private String password1;
+
+    public ArrayList<String> getNumsList() {
+        return numsList;
+    }
+
     private String password2;
     private long voteridbase;
-    ArrayList <String> numsList = new ArrayList<String>();
+    private UUID refID;
+    private ArrayList <String> numsList;
     
-    public static ArrayList getNumsList(String password1, String password2, int numCards, int digits) {
+    public static ArrayList getNumsList(UUID refID, String password1, String password2, int numCards, int digits) {
         ArrayList <String> staticNumsList = new ArrayList<String>();
-        GenerateCardNumbers gn = new GenerateCardNumbers( password1,  password2,  numCards, digits);
+        GenerateCardNumbers gn = new GenerateCardNumbers( refID, password1,  password2,  numCards, digits);
         return staticNumsList;
     }
 
-    public GenerateCardNumbers(String password1, String password2, int numCards, int digits) {
+    public GenerateCardNumbers(UUID refID, String password1, String password2, int numCards, int digits) {
         createLookupTable();
+        this.refID = refID;
         this.password1 = password1;
         this.password2 = password2;
         voteridbase = hash(password1);
+        numsList = new ArrayList<String>();
         genCardNumbers(voteridbase, numCards, digits);
-        //printList();
 
     }
 
     private void writeToFile() {
-        File file = new File("./nums.txt");
+        File file = new File("./" + refID.toString() + "_nums.txt");
         FileWriter fw = null;
         try {
             fw = new FileWriter(file.getAbsoluteFile());

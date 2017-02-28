@@ -6,6 +6,6 @@ import java.util.UUID;
 
 
 public interface Referendum {
-    UUID createReferendum(UUID refId, Date startDate, Date endDate, ArrayList<Question> questions, VoteCollector collector);
+    void createReferendum(UUID refId, Date startDate, Date endDate, ArrayList<Question> questions, VoteCollector collector);
     void publishResults(UUID refId);
 }

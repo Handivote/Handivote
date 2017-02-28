@@ -27,7 +27,10 @@ public class ReferendumFactory {
                 voteCollector = new MockEmailCollector();
                 break;
             case "Email":
-                voteCollector = new MockEmailCollector();
+                voteCollector = new EmailCollector();
+                break;
+            case "SMS":
+                voteCollector = new SMSCollector();
                 break;
             default:
                 throw new IllegalArgumentException("Invalid Collector type: " + voteCollectorType);
@@ -37,13 +40,20 @@ public class ReferendumFactory {
 
     }
 
-    public Referendum buildReferendum(Properties properties){
+    Referendum buildReferendum(Properties properties){
+        UUID refID = UUID.randomUUID();
+        int numberOfCards= Integer.parseInt(properties.getProperty("numberOfCards"));
+        int pinDigits= Integer.parseInt(properties.getProperty("digits"));
+        String password1 = properties.getProperty("password1");
+        String password2 = properties.getProperty("password2");
+        // load card numbers
+        registerVoters(refID, numberOfCards, pinDigits, password1, password2);
+
         String pattern = properties.getProperty("dates.pattern");
         String startDateStr = properties.getProperty("startDate");
         String endDateStr = properties.getProperty("endDate");
         Date startDate = setDates(pattern, startDateStr);
         Date endDate = setDates(pattern, endDateStr);
-
         String refType = properties.getProperty("refType");
 
         ArrayList<Question> questions = new ArrayList<Question>();
@@ -57,21 +67,25 @@ public class ReferendumFactory {
 
             System.out.println(questions.get(i).toString());
         }
-        UUID refID = UUID.randomUUID();
+
+        Referendum referendum;
         VoteCollector voteCollector = setCollector(refID, properties.getProperty("voteMethod"));
         switch (refType){
             case "simple":
-                SimpleReferendum simpleReferendum = new SimpleReferendum();
-
-                simpleReferendum.createReferendum(refID, startDate, endDate,questions, voteCollector);
+                referendum = new SimpleReferendum();
+                referendum.createReferendum(refID, startDate, endDate,questions, voteCollector);
                 break;
             default:
                 throw new IllegalArgumentException("Invalid Referendum type: " + refType);
 
         }
+        return referendum;
+    }
 
-
-        return null;
+    private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2) {
+        GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
+        StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
+        scn.storeCardNumbers();
     }
 
 }

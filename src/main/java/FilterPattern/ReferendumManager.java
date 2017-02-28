@@ -2,21 +2,18 @@ package FilterPattern;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Properties;
 
 public class ReferendumManager {
-    private static ArrayList <String> props;
+    private static Referendum referendum;
 
     public static void main(String[] args) {
         ReferendumFactory rf = new ReferendumFactory();
         String fName = "";
-        if(args.length >0){
+        if (args.length > 0) {
             fName = args[0];
-        }
-        else{
+        } else {
             fName = "test.properties";
         }
 
@@ -24,27 +21,13 @@ public class ReferendumManager {
         FileInputStream fileInput = null;
         try {
             fileInput = new FileInputStream(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        Properties properties = new Properties();
-        try {
+            Properties properties = new Properties();
             properties.load(fileInput);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println(properties.stringPropertyNames());
-        rf.buildReferendum(properties);
-        try {
+            System.out.println(properties.stringPropertyNames());
+            referendum = rf.buildReferendum(properties);
             fileInput.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            e.getStackTrace();
         }
-
-        //fName);
-
-
-
     }
-
 }
