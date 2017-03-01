@@ -4,11 +4,15 @@ import java.util.Arrays;
 
 
 public class Vote {
+    private boolean valid;
     private String voterID;
     private String voterPIN;
     private long timestamp;
     private String questionID;
     private String [] ballot;
+
+
+    private boolean pinChecked;
 
 
     public Vote(String voterID, String voterPIN, long timestamp, String questionID, String[] ballot) {
@@ -17,8 +21,17 @@ public class Vote {
         this.timestamp = timestamp;
         this.questionID = questionID;
         this.ballot = ballot;
+        this.valid = true;
+        this.pinChecked =false;
     }
 
+    public boolean isValid() {
+        return valid;
+    }
+
+    protected void setValid(boolean valid) {
+        this.valid = valid;
+    }
 
     public String getVoterID() {
         return voterID;
@@ -43,6 +56,15 @@ public class Vote {
     public String[] getBallot() {
         return ballot;
     }
+
+    public boolean isPinChecked() {
+        return pinChecked;
+    }
+
+    public void setPinChecked(boolean pinChecked) {
+        this.pinChecked = pinChecked;
+    }
+
 
 
     public String toJSONString() {

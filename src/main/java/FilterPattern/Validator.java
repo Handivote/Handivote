@@ -12,38 +12,44 @@ public class Validator {
 
     private UUID refID;
     private DB voteDB;
-    private DB numsDB;
+    private DB cardsDB;
 
     public Validator(UUID refID) {
         this.refID = refID;
-        this.voteDB = setupDB(refID);
+        setupDB(refID);
     }
 
-    private DB setupDB(UUID refID) {
+    private  void setupDB(UUID refID) {
         voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
-        numsDB = DBMaker.fileDB(refID + ".nums").fileMmapEnable().make();
-        return voteDB;
+        cardsDB = DBMaker.fileDB(refID + ".register").fileMmapEnable().make();
+
     }
-    public void validateVotes(){
-        HTreeMap<Long, String> voteMap = voteDB.hashMap("map", Serializer.LONG, Serializer.STRING).createOrOpen();
-        HTreeMap<Integer, String> numsMap = numsDB.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
-        Set<Long> keys = voteMap.getKeys();
+
+    public void validateVoterPIN() {
+        HTreeMap<String, String> voteMap = voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
+        HTreeMap<String, String> cardsMap = cardsDB.hashMap("numsMap", Serializer.STRING, Serializer.STRING).createOrOpen();
+        Set<String> keys = voteMap.getKeys();
         Object[] arr = keys.toArray();
-        for ( int i=0; i<keys.size (); i++){
+        for (int i = 0; i < keys.size(); i++) {
             String strVote = voteMap.get(arr[i]);
             String[] parts = strVote.split(" ");
-            String voterID = numsMap.get(parts[0]);
+            String voterID = cardsMap.get(parts[0]);
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
-            if(vote.getVoterPIN().equals(numsMap.get(vote.getVoterID()))){
-                vote.resetVoterPIN();
-                System.out.println(vote.toJSONString() + " validated");
-
+            // get vote from storage, if not checked, check and return to store, else do nothing,
+            if (!vote.isPinChecked()) {
+                System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID())); //todo fix this
+                if (vote.getVoterPIN().equals(cardsMap.get(vote.getVoterID())) ) {
+                    vote.resetVoterPIN();
+                    System.out.println(vote.toJSONString() + " validated");
+                } else {
+                    vote.setValid(false);
+                    System.out.println(vote.toJSONString() + " \n processed bad vote");
+                }
+                vote.setPinChecked(true);
+                voteMap.put(vote.getVoterID(), vote.toString());
+                //Object foo = map.remove(arr[i]);
+                //System.out.println("foo : " + foo.toString());
             }
-            else{
-                System.out.println(vote.toJSONString() + " \n processed bad vote");
-            }
-            //Object foo = map.remove(arr[i]);
-            //System.out.println("foo : " + foo.toString());
         }
         voteDB.commit();
         voteDB.close();
@@ -51,7 +57,6 @@ public class Validator {
         //HTreeMap<Integer, String> map2 = voteDB.hashMap("map", Serializer.INTEGER, Serializer.STRING).createOrOpen();
         //System.out.println(map2.values());
     }
-
 
 
 }

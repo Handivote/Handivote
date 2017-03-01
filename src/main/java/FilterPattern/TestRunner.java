@@ -21,7 +21,7 @@ public class TestRunner {
         //DB db = DBMaker.fileDB(refID + ".raw").make();
 
         Validator validator = new Validator(refID);
-        validator.validateVotes();
+        validator.validateVoterPIN();
 
     }
 }

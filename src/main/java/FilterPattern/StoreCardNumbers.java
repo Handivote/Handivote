@@ -26,7 +26,7 @@ class StoreCardNumbers {
         return db;
     }
     void storeCardNumbers(){
-        HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
+        HTreeMap<String, String> map = db.hashMap("numsMap", Serializer.STRING, Serializer.STRING).createOrOpen();
         for (int i=0; i<numsList.size(); i++){
             String str = (String) numsList.get(i);
             String [] parts = str.split(" ");

@@ -22,7 +22,10 @@ public class RawVoteRecorder {
     }
 
     public void closeDB(){
-            db.close();
+        HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
+        System.out.println(map.size());
+        map.close();
+        db.close();
     }
 
     private  DB  setupDB(UUID refId){
@@ -31,9 +34,9 @@ public class RawVoteRecorder {
     }
 
     public boolean recordVote(Vote vote){
-        HTreeMap<Long, String> map = db.hashMap("map", Serializer.LONG, Serializer.STRING).createOrOpen();
-        map.put(vote.getTimestamp(), vote.toString());
-        System.out.println("recorded: " + vote.toString());
+        HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
+        map.put(vote.getVoterID(), vote.toString());
+        System.out.println("recorded: " + vote.toString()+ " " + map.size());
         db.commit();
         return true;
     }
