@@ -33,10 +33,10 @@ public class MockEmailCollector implements VoteCollector{
     }
 
 
-    public  Message[] getMails() throws IOException, MessagingException,
+    public  Message[] getMails(UUID refID) throws IOException, MessagingException,
             UserException, InterruptedException {
         try {
-            emails = mockEmails.createMockEmailList("nums.txt");
+            emails = mockEmails.createMockEmailList(refID.toString() + "_nums.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -91,7 +91,7 @@ public class MockEmailCollector implements VoteCollector{
         RawVoteRecorder rawVoteRecorder = new RawVoteRecorder(refID);
         Message[] ballots = null;
         try {
-             ballots = getMails();
+             ballots = getMails(refID);
             for (int i=0; i<ballots.length; i++){
                 long timestamp = new Date().getTime();
                 String[] content = ((String) ballots[i].getContent()).split(" ");

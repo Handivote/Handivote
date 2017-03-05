@@ -46,7 +46,7 @@ public class Validator {
                     System.out.println(vote.toJSONString() + " \n processed bad vote");
                 }
                 vote.setPinChecked(true);
-                voteMap.put(vote.getVoterID(), vote.toString());
+                //voteMap.put(vote.getVoterID(), vote.toString());
                 //Object foo = map.remove(arr[i]);
                 //System.out.println("foo : " + foo.toString());
             }

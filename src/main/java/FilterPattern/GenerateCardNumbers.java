@@ -76,6 +76,7 @@ class GenerateCardNumbers
             voteridbase= voteridbase %1000000000000000L;
         }
         writeToFile();
+        printList();
     }
 
 
