@@ -93,7 +93,7 @@ public class EmailCollector implements VoteCollector {
 
     @Override
     public void collectVotes(UUID refID)  {
-        RawVoteRecorder rawVoteRecorder = new RawVoteRecorder(refID);
+        VoteRecorder voteRecorder = new VoteRecorder(refID);
         Message[] ballots = null;
         try {
             ballots = readMessages();
@@ -102,13 +102,13 @@ public class EmailCollector implements VoteCollector {
                 String[] content = ((String) ballots[i].getContent()).split(" ");
                 String[] optionsBallot = Arrays.copyOfRange(content, 3, content.length);
                 Vote vote = new Vote(content[1], content[2], timestamp, "", optionsBallot);
-                rawVoteRecorder.recordVote(vote);
+                voteRecorder.recordVote(vote);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         finally{
-            rawVoteRecorder.closeDB();
+            voteRecorder.closeDB();
         }
     }
 

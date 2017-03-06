@@ -20,7 +20,7 @@ public class TestRunner {
         System.out.println("done");
         //DB db = DBMaker.fileDB(refID + ".raw").make();
 
-        Validator validator = new Validator(refID);
+        PINValidator validator = new PINValidator(refID);
         validator.validateVoterPIN();
 
     }

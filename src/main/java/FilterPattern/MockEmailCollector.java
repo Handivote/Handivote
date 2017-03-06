@@ -88,7 +88,7 @@ public class MockEmailCollector implements VoteCollector{
 
     @Override
     public void collectVotes(UUID refID)  {
-        RawVoteRecorder rawVoteRecorder = new RawVoteRecorder(refID);
+        VoteRecorder voteRecorder = new VoteRecorder(refID);
         Message[] ballots = null;
         try {
              ballots = getMails(refID);
@@ -97,14 +97,14 @@ public class MockEmailCollector implements VoteCollector{
                 String[] content = ((String) ballots[i].getContent()).split(" ");
                 String[] ballot = Arrays.copyOfRange(content, 4, content.length);
                 Vote vote = new Vote(content[1], content[2], timestamp, "1", ballot);
-                rawVoteRecorder.recordVote(vote);
+                voteRecorder.recordVote(vote);
             }
         } catch (IOException | MessagingException | UserException | InterruptedException e) {
             e.printStackTrace();
         }
         finally{
             stopServer();
-            rawVoteRecorder.closeDB();
+            voteRecorder.closeDB();
         }
     }
 

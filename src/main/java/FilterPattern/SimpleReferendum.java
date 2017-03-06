@@ -10,7 +10,7 @@ public class SimpleReferendum implements Referendum {
     @Override
     public void createReferendum(UUID refID, Date startDate, Date endDate, ArrayList<Question> questions, VoteCollector collector) {
         collector.collectVotes(refID);
-        Validator pinValidator = new Validator(refID);
+        PINValidator pinValidator = new PINValidator(refID);
         pinValidator.validateVoterPIN();
         System.out.println(" seems to be working");
     }

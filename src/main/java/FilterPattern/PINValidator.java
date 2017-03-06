@@ -8,13 +8,13 @@ import org.mapdb.Serializer;
 import java.util.Set;
 import java.util.UUID;
 
-public class Validator {
+public class PINValidator {
 
     private UUID refID;
     private DB voteDB;
     private DB cardsDB;
 
-    public Validator(UUID refID) {
+    public PINValidator(UUID refID) {
         this.refID = refID;
         setupDB(refID);
     }
@@ -37,7 +37,7 @@ public class Validator {
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
             // get vote from storage, if not checked, check and return to store, else do nothing,
             if (!vote.isPinChecked()) {
-                System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID())); //todo fix this
+                System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID()));
                 if (vote.getVoterPIN().equals(cardsMap.get(vote.getVoterID())) ) {
                     vote.resetVoterPIN();
                     System.out.println(vote.toJSONString() + " validated");
