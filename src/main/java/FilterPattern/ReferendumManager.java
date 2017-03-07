@@ -23,7 +23,7 @@ public class ReferendumManager {
             fileInput = new FileInputStream(file);
             Properties properties = new Properties();
             properties.load(fileInput);
-            System.out.println(properties.stringPropertyNames());
+            //System.out.println(properties.stringPropertyNames());
             referendum = rf.buildReferendum(properties);
             fileInput.close();
         } catch (IOException e) {

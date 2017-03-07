@@ -31,7 +31,7 @@ class StoreCardNumbers {
             String str = (String) numsList.get(i);
             String [] parts = str.split(" ");
             map.put(parts[0], parts[1]);
-            System.out.println("added " +numsList.get(i));
+            //System.out.println("added " +numsList.get(i));
         }
         db.commit();
         db.close();

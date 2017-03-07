@@ -12,7 +12,6 @@ public class SimpleReferendum implements Referendum {
         collector.collectVotes(refID);
         PINValidator pinValidator = new PINValidator(refID);
         pinValidator.validateVoterPIN();
-        System.out.println(" seems to be working");
     }
 
     @Override

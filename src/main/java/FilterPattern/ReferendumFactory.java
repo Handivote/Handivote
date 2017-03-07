@@ -32,6 +32,9 @@ public class ReferendumFactory {
             case "SMS":
                 voteCollector = new SMSCollector();
                 break;
+            case "Test":
+                voteCollector = new TestCollector();
+                break;
             default:
                 throw new IllegalArgumentException("Invalid Collector type: " + voteCollectorType);
 
@@ -64,8 +67,6 @@ public class ReferendumFactory {
             }
             Question question = new Question(1, 0, properties.getProperty("question1"), options );
             questions.add(question);
-
-            System.out.println(questions.get(i).toString());
         }
 
         Referendum referendum;
@@ -75,6 +76,7 @@ public class ReferendumFactory {
                 referendum = new SimpleReferendum();
                 referendum.createReferendum(refID, startDate, endDate,questions, voteCollector);
                 break;
+
             default:
                 throw new IllegalArgumentException("Invalid Referendum type: " + refType);
 
