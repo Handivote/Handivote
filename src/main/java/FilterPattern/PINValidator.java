@@ -30,13 +30,14 @@ public class PINValidator {
         HTreeMap<String, String> cardsMap = cardsDB.hashMap("numsMap", Serializer.STRING, Serializer.STRING).createOrOpen();
         Set<String> keys = voteMap.getKeys();
         Object[] arr = keys.toArray();
+        System.out.println(voteMap.size());
         for (int i = 0; i < keys.size(); i++) {
             String strVote = voteMap.get(arr[i]);
             String[] parts = strVote.split(" ");
             String voterID = cardsMap.get(parts[0]);
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
             // get vote from storage, if not checked, check and return to store, else do nothing,
-            if (!vote.isPinChecked()) {
+            if (!vote.isPinVerified()) {
                 System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID()));
                 if (vote.getVoterPIN().equals(cardsMap.get(vote.getVoterID())) ) {
                     vote.resetVoterPIN();
@@ -45,8 +46,8 @@ public class PINValidator {
                     vote.setValid(false);
                     System.out.println(vote.toJSONString() + " \n processed bad vote");
                 }
-                vote.setPinChecked(true);
-                //voteMap.put(vote.getVoterID(), vote.toString());
+                vote.setPinVerification(true);
+                voteMap.put(vote.getVoterID(), vote.toString());
                 //Object foo = map.remove(arr[i]);
                 //System.out.println("foo : " + foo.toString());
             }

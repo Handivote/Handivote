@@ -30,13 +30,14 @@ public class TestCollector implements VoteCollector {
             for (int i=0; i<ballots.size(); i++){
                 long timestamp = new Date().getTime();
                 String [] content = ballots.get(i);
-                System.out.println("content :" + content[1]);
+                //System.out.println("content :" + content[1]);
                 String [] id = content[1].trim().split(" ");
                 //String ballot = content.substring(4);
                 Vote vote = new Vote(id[0], id[1], timestamp, "1", content[2].split(""));
                 voteRecorder.recordVote(vote);
-                System.out.println(" id: " + id[0]+ "  recorded");
+                //System.out.println(" id: " + id[0]+ "  recorded");
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

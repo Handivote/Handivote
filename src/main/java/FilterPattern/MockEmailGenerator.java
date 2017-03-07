@@ -39,19 +39,17 @@ public class MockEmailGenerator {
         int rndInt = rnd.nextInt(voteArray.length);
         return voteArray[rndInt];
     }
-    private String[] addMultiRandomVote(int numberOfQuestions){
-        //TODO for number of questions; pick a rnd number >=1 and <5; add to array in format {questionNum}{rnd1,rnd2,..}
-        String[][] voteArray;
+    public String[][] addMultiRandomVote(int numberOfQuestions){
+        //TODO for number of questions; pick a rnd number >=1 and <5; add to array in format {questionNum}{rnd1}
+        String[][] voteArray = new String[numberOfQuestions][1];
+        Random rnd = new Random();
         for(int j =0; j<numberOfQuestions;j++){
-            Random rnd = new Random();
-            int opt = rnd.nextInt(5);
-            voteArray[j] = (String)(new Integer(opt);
-                    {{"1","2"},{"1","2"},{"1","3"},{"2","1"}, {"1", "1"},{"1","1"},{"1","2"},{"2","4"}};
-            Random rnd = new Random();
-            int rndInt = rnd.nextInt(voteArray.length);
 
+            String opt = String.valueOf(1+ rnd.nextInt(4));
+            voteArray[j][0] = opt ;
+            System.out.println(voteArray[j][0]);
         }
-        return voteArray[rndInt];
+        return voteArray;
     }
 
     private String generateMobileNumber(){

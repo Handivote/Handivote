@@ -75,6 +75,7 @@ public class ReferendumFactory {
             case "simple":
                 referendum = new SimpleReferendum();
                 referendum.createReferendum(refID, startDate, endDate,questions, voteCollector);
+                referendum.publishResults(refID);
                 break;
 
             default:

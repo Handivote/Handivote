@@ -12,7 +12,7 @@ public class Vote {
     private String [] ballot;
 
 
-    private boolean pinChecked;
+    private boolean pinVerified;
 
 
     public Vote(String voterID, String voterPIN, long timestamp, String questionID, String[] ballot) {
@@ -22,7 +22,7 @@ public class Vote {
         this.questionID = questionID;
         this.ballot = ballot;
         this.valid = true;
-        this.pinChecked =false;
+        this.pinVerified =false;
     }
 
     public boolean isValid() {
@@ -57,12 +57,12 @@ public class Vote {
         return ballot;
     }
 
-    public boolean isPinChecked() {
-        return pinChecked;
+    public boolean isPinVerified() {
+        return pinVerified;
     }
 
-    public void setPinChecked(boolean pinChecked) {
-        this.pinChecked = pinChecked;
+    public void setPinVerification(boolean pinVerified) {
+        this.pinVerified = pinVerified;
     }
 
 

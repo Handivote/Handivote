@@ -15,7 +15,9 @@ public class SimpleReferendum implements Referendum {
     }
 
     @Override
-    public void publishResults(UUID refId) {
+    public void publishResults(UUID refID) {
+        VoteCounter vc = new VoteCounter(refID);
+        vc.calculateResults();
 
     }
 }
