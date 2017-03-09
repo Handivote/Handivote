@@ -73,12 +73,12 @@ public class Vote {
                 ", voterPIN='" + voterPIN + '\'' +
                 ", timestamp=" + timestamp +
                 ", questionID='" + questionID + '\'' +
-                ", ballot=" + Arrays.toString(ballot) +
+                ", ballot=" + Arrays.toString(ballot).replace('[', ' ').replace(']', ' ').replace(',', ' ').trim() +
                 '}';
     }
     @Override
     public String toString() {
-        return "" + voterID + " " + voterPIN + " " + timestamp + " " + questionID + " " + Arrays.toString(ballot);
+        return "" + voterID + " " + voterPIN + " " + timestamp + " " + questionID + " " + Arrays.toString(ballot).replace('[', ' ').replace(']', ' ').replace(',', ' ').trim();
     }
     private String ballotToString(String [][] ballot){
         String ballotString = null;
