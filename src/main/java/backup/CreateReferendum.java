@@ -66,4 +66,17 @@ class CreateReferendum {
     public UUID getRefId() {
         return refId;
     }
+
+
+    private String ballotToString(String[][] ballot){
+        StringBuilder ballotString = new StringBuilder();
+        for (int i=0; i<ballot.length;i++){
+            for (int j=0; j<ballot[i].length;j++){
+                ballotString.append(String.valueOf(ballot[i]));
+                ballotString.append(":");
+                ballotString.append(String.valueOf(ballot[i][j]));
+            }
+        }
+        return ballotString.toString();
+    }
 }
