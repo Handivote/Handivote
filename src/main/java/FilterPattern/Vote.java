@@ -9,7 +9,7 @@ public class Vote {
     private String voterPIN;
     private long timestamp;
     private String questionID;
-    private String [] ballot;
+    private String[] ballot;
 
 
     private boolean pinVerified;
@@ -79,5 +79,16 @@ public class Vote {
     @Override
     public String toString() {
         return "" + voterID + " " + voterPIN + " " + timestamp + " " + questionID + " " + Arrays.toString(ballot);
+    }
+    private String ballotToString(String [][] ballot){
+        String ballotString = null;
+        for (int i=0; i<ballot.length;i++){
+            ballotString += ballot[i];
+            for(int j=0; j<ballot[i].length;j++){
+                ballotString += ballot[i][j];
+            }
+        }
+
+        return ballotString;
     }
 }
