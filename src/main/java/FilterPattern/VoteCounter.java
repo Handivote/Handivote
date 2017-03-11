@@ -37,7 +37,7 @@ public class VoteCounter {
         for(String key : voteMap.getKeys()){
             String[] parts = voteMap.get(key).split(" ");
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
-
+            publishResults(key);
             for(String  opt : vote.getBallot()) {
                 if ( Integer.parseInt(opt)>0  && (Integer.parseInt(opt) <5)) {
                     Integer i = ballotCount.get(opt);
@@ -47,38 +47,13 @@ public class VoteCounter {
                 }else{
                     ballotCount.put(badVote, ballotCount.get(badVote)+1 );
                 }
-
             }
-
-            for(int i =0; i< ballotCount.keySet().size(); i++){
-             System.out.println("Option " + i + ": " + ballotCount.get(String.valueOf(i)));
-            }
-
         }
         System.out.println(badVote +" " + ballotCount.get(badVote));
 
     }
-    private void writeToFile(String qID, String optID) {
-        File file = new File("./" + refID.toString() + "Question_" + qID + optID + ".txt");
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter(file.getAbsoluteFile());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        BufferedWriter bw = new BufferedWriter(fw);
 
-//        for (String s : ) {
-//            try {
-//                bw.write(s + System.getProperty("line.separator"));
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        try {
-//            bw.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+    private void publishResults(String key) {
     }
+
 }
