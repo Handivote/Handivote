@@ -74,7 +74,7 @@ public class ReferendumFactory {
         switch (refType){
             case "simple":
                 referendum = new SimpleReferendum();
-                referendum.createReferendum(refID, startDate, endDate,questions, voteCollector);
+                referendum.createReferendum(refID, startDate, endDate, questions, voteCollector);
                 referendum.publishResults(refID);
                 break;
 
@@ -87,8 +87,9 @@ public class ReferendumFactory {
 
     private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2) {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
-        StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
-        scn.storeCardNumbers();
+        //StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
+        StoreCardNumbers scn = new StoreCardNumbers(refID, "email_nums.txt");
+        //scn.storeCardNumbers();
     }
 
 }

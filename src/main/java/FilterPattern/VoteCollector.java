@@ -7,6 +7,6 @@ public interface VoteCollector{
 
 
     void collectVotes(UUID refID);
-    void sendAck();
+    void sendAck(Vote vote);
 
 }

@@ -14,7 +14,7 @@ public class ReferendumManager {
         if (args.length > 0) {
             fName = args[0];
         } else {
-            fName = "test.properties";
+            fName = "emailtest.properties";
         }
 
         File file = new File(fName);

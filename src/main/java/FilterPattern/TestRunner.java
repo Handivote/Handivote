@@ -14,9 +14,9 @@ public class TestRunner {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID,"password1", "wordpass2", numCards, 4);
         StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
         scn.storeCardNumbers();
-        MockEmailCollector mockEmails = new MockEmailCollector();
-        mockEmails.collectVotes(refID);
-        mockEmails.stopServer();
+        EmailCollector emails = new EmailCollector();
+        emails.collectVotes(refID);
+        //emails.stopServer();
         System.out.println("done");
         //DB db = DBMaker.fileDB(refID + ".raw").make();
 

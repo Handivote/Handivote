@@ -1,10 +1,17 @@
 
 package FilterPattern;
 
-import backup.VoteParser;
+import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.HttpException;
+import org.apache.commons.httpclient.HttpStatus;
+import org.apache.commons.httpclient.methods.GetMethod;
+import org.apache.commons.httpclient.params.HttpMethodParams;
 
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 public class EmailCollector implements VoteCollector {
@@ -19,6 +26,10 @@ public class EmailCollector implements VoteCollector {
     private static Session session;
     private static Store store;
     private static ArrayList emails;
+    private  UUID refID;
+
+
+
 
     private static Session setupSession() throws Exception {
         //create properties field
@@ -43,7 +54,7 @@ public class EmailCollector implements VoteCollector {
         return session;
     }
 
-    static Message[] readMessages() throws Exception {
+     Message[] readMessages(UUID refID) throws Exception {
 
         if (session == null) setupSession();
         //System.out.println(store);
@@ -53,21 +64,21 @@ public class EmailCollector implements VoteCollector {
         inbox.open(Folder.READ_WRITE);
         FlagTerm ft = new FlagTerm(new Flags(Flags.Flag.SEEN), false);
         Message messages[] = new Message[0];
-        // Message messages[] =  MockEmailRetriever.getMails(); // remove after testing is complete
+        //MockEmailCollector mcn = new MockEmailCollector();
+        //Message messages[] =  mcn.getMails(refID); // remove after testing is complete
         try {
             messages = inbox.search(ft);
             for (Message m : messages) {
-                System.out.println(m.getFrom().length + " " + m.getContent());
-                emails.add(VoteParser.extractDetails(m.getSubject() + m.getContent()));
+                System.out.println("delivered message from : " +  m.getSubject().toString());
 
+                //emails.add(VoteParser.extractDetails(m.getSubject() + m.getContent()));
             }
         } catch (MessagingException e) {
             e.printStackTrace();
             e.getMessage();
         } finally {
-            // retrieve the messages from the folder in an array and print it
-            System.out.println(messages.length + " Messages in inbox");
-            close();
+
+            //close();
         }
         return messages;
     }
@@ -80,29 +91,24 @@ public class EmailCollector implements VoteCollector {
         }
     }
 
-    public static void main(String[] args) {
-        if (args.length > 0) VERBOSE = true;
-        try {
-            EmailCollector.readMessages();
-        } catch (Exception ee) {
-            ee.printStackTrace();
-        }
-        System.exit(0);
 
-    }
+
+
 
     @Override
     public void collectVotes(UUID refID)  {
         VoteRecorder voteRecorder = new VoteRecorder(refID);
         Message[] ballots = null;
         try {
-            ballots = readMessages();
+            ballots = readMessages(refID);
             for (int i=0; i<ballots.length; i++){
                 long timestamp = new Date().getTime();
                 String[] content = ((String) ballots[i].getContent()).split(" ");
-                String[] optionsBallot = Arrays.copyOfRange(content, 3, content.length);
-                Vote vote = new Vote(content[1], content[2], timestamp, "", optionsBallot);
+                String[] optionsBallot = Arrays.copyOfRange(content, 4, content.length);
+                Vote vote = new Vote(content[0], content[1], timestamp, "1", optionsBallot);
                 voteRecorder.recordVote(vote);
+                System.out.println("delivered message from : " +  content[0].toString() + vote.toString());
+                sendAck(vote);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -114,9 +120,61 @@ public class EmailCollector implements VoteCollector {
 
 
     @Override
-    public void sendAck() {
-        //TODO
+    public void sendAck(Vote vote) {
+        if (VERBOSE) System.out.println("Sending ACK");
+
+        String url ="";
+
+        //String url="http://www.kapow.co.uk/scripts/sendsms.php?"+
+        //    "username=LFC1989&password=NUT1989&mobilBurtons suitse="+number+
+       //     "&sms="+"Handivote+thanks+you+for+your+vote";
+
+
+
+        // Create an instance of HttpClient.
+        HttpClient client = new HttpClient( );
+        client.getHostConfiguration().setProxy("wwwcache.dcs.gla.ac.uk", 8080);
+        Properties props = System.getProperties();
+
+        // Create a method instance.
+        GetMethod method = new GetMethod(url);
+        System.out.println("Invoked " + url);
+
+
+        // Provide custom retry handler is necessary
+        method.getParams().setParameter(HttpMethodParams.RETRY_HANDLER,
+                new DefaultHttpMethodRetryHandler(3, false));
+
+        try {
+            // Execute the method.
+
+            int statusCode = client.executeMethod(method);
+
+            if (statusCode != HttpStatus.SC_OK) {
+                System.err.println("Method failed: " + method.getStatusLine());
+            }
+
+            // Read the response body.
+            InputStream responseBody = method.getResponseBodyAsStream();
+
+            // Deal with the response.
+            // Use caution: ensure correct character encoding and is not binary data
+
+            //System.out.println("Done!");
+
+        } catch (HttpException e) {
+            System.err.println("Fatal protocol violation: " + e.getMessage());
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Fatal transport error: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            // Release the connection.
+            method.releaseConnection();
+        }
 
     }
+
 }
+
 

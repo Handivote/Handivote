@@ -63,7 +63,7 @@ public class MockEmailCollector implements VoteCollector{
 
             // use greenmail to store the message
             user.deliver(message);
-            //System.out.println("delivered message from : " +  message.getFrom()[0].toString());
+           //System.out.println("delivered message from : " +  message.getFrom()[0].toString());
         }
         // fetch the e-mail via imaps using javax.mail ..
         Properties props = new Properties();
@@ -109,7 +109,7 @@ public class MockEmailCollector implements VoteCollector{
     }
 
     @Override
-    public void sendAck() {
+    public void sendAck(Vote vote) {
 
     }
 }
