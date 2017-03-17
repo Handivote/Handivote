@@ -14,7 +14,7 @@ public class ReferendumManager {
         if (args.length > 0) {
             fName = args[0];
         } else {
-            fName = "emailtest.properties";
+            fName = "test.properties";
         }
 
         File file = new File(fName);
@@ -24,7 +24,9 @@ public class ReferendumManager {
             Properties properties = new Properties();
             properties.load(fileInput);
             //System.out.println(properties.stringPropertyNames());
+            //rf.setScheduler();
             referendum = rf.buildReferendum(properties);
+
             fileInput.close();
         } catch (IOException e) {
             e.getStackTrace();
