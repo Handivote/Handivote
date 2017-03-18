@@ -1,6 +1,7 @@
+/*
 package backup;
 
-import FilterPattern.Question;
+import Question;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
@@ -80,3 +81,4 @@ class CreateReferendum {
         return ballotString.toString();
     }
 }
+*/

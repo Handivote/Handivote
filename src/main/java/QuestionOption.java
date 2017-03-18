@@ -1,5 +1,3 @@
-package FilterPattern;
-
 public class QuestionOption {
     private String qid;
     private String optionId;

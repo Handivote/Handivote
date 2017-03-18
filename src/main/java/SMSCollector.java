@@ -1,5 +1,3 @@
-package FilterPattern;
-
 import java.util.UUID;
 
 public class SMSCollector implements VoteCollector {

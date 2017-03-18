@@ -1,6 +1,3 @@
-package FilterPattern;
-
-
 import java.util.UUID;
 
 public class TestRunner {
