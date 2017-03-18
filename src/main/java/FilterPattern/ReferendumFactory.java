@@ -1,50 +1,14 @@
 package FilterPattern;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Properties;
 import java.util.UUID;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import static java.util.concurrent.TimeUnit.*;
 
 public class ReferendumFactory {
 
-    private final ScheduledExecutorService scheduler =
-            Executors.newScheduledThreadPool(1);
 
-    public void setScheduler(Date startDate, Date endDate) {
-        long delay = startDate.getTime() - System.currentTimeMillis();
-        long endDelay = endDate.getTime() - System.currentTimeMillis();
-        final Runnable beeper = new Runnable() {
-            public void run() {
-                System.out.println("time til start : "+ delay + " : time til end : " + endDelay + " time now = " + System.currentTimeMillis());
-            }
-        };
-        System.out.println("time til start : "+ delay + " : time til end : " + endDelay + " time now = " + System.currentTimeMillis());
 
-        final ScheduledFuture<?> beeperHandle =
-                scheduler.scheduleWithFixedDelay(beeper,delay, delay, MILLISECONDS );
-        scheduler.schedule(new Runnable() {
-            public void run() {
-                beeperHandle.cancel(true);
-            }
-        }, endDelay, MILLISECONDS);
-    }
 
-    private static Date setDates(String pattern, String dateStr) {
-        SimpleDateFormat format = new SimpleDateFormat(pattern);
-        Date date = null;
-        try {
-            date = format.parse(dateStr);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return date;
-    }
     private VoteCollector setCollector(UUID refID, String voteCollectorType){
         VoteCollector voteCollector;
         switch (voteCollectorType){
@@ -77,12 +41,8 @@ public class ReferendumFactory {
         // load card numbers
         registerVoters(refID, numberOfCards, pinDigits, password1, password2);
 
-        String pattern = properties.getProperty("dates.pattern");
-        String startDateStr = properties.getProperty("startDate");
-        String endDateStr = properties.getProperty("endDate");
-        Date startDate = setDates(pattern, startDateStr);
-        Date endDate = setDates(pattern, endDateStr);
-        setScheduler(startDate, endDate);
+
+
         String refType = properties.getProperty("refType");
 
         ArrayList<Question> questions = new ArrayList<Question>();
@@ -100,8 +60,7 @@ public class ReferendumFactory {
         switch (refType){
             case "simple":
                 referendum = new SimpleReferendum();
-                referendum.createReferendum(refID, startDate, endDate, questions, voteCollector);
-                referendum.publishResults(refID);
+                referendum.createReferendum(refID, questions, voteCollector);
                 break;
 
             default:

@@ -2,13 +2,19 @@ package FilterPattern;
 
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.UUID;
 
 public class SimpleReferendum implements Referendum {
+    private UUID refID;
 
     @Override
-    public void createReferendum(UUID refID, Date startDate, Date endDate, ArrayList<Question> questions, VoteCollector collector) {
+    public UUID getRefID() {
+        return refID;
+    }
+
+    @Override
+    public void createReferendum(UUID refID,  ArrayList<Question> questions, VoteCollector collector) {
+        this.refID = refID;
         collector.collectVotes(refID);
         PINValidator pinValidator = new PINValidator(refID);
         pinValidator.validateVoterPIN();
@@ -20,4 +26,5 @@ public class SimpleReferendum implements Referendum {
         vc.calculateResults();
 
     }
+
 }

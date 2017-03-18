@@ -1,11 +1,11 @@
 package FilterPattern;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.UUID;
 
 
 public interface Referendum {
-    void createReferendum(UUID refId, Date startDate, Date endDate, ArrayList<Question> questions, VoteCollector collector);
+    UUID getRefID();
+    void createReferendum(UUID refId,  ArrayList<Question> questions, VoteCollector collector);
     void publishResults(UUID refId);
 }
