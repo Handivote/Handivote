@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.UUID;
@@ -70,8 +71,14 @@ public class ReferendumFactory {
 
     private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2) {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
-        StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
-        //StoreCardNumbers scn = new StoreCardNumbers(refID, "email_nums.txt");
+        //StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
+        //todo load nums from file
+        StoreCardNumbers scn = null;
+        try {
+            scn = new StoreCardNumbers(refID, "emailnums.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         scn.storeCardNumbers();
     }
 

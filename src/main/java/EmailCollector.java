@@ -1,14 +1,5 @@
-import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.HttpException;
-import org.apache.commons.httpclient.HttpStatus;
-import org.apache.commons.httpclient.methods.GetMethod;
-import org.apache.commons.httpclient.params.HttpMethodParams;
-
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.*;
 
 public class EmailCollector implements VoteCollector {
@@ -47,7 +38,7 @@ public class EmailCollector implements VoteCollector {
         //create the IMAPS store object and connect with the smtp server
         store = session.getStore("imaps");
         // todo encrypt password in config files
-        store.connect("imap.gmail.com", "handivote.testing@gmail.com", "poppop12");
+        store.connect("imap.gmail.com", "handivote.testing@gmail.com", "poppoppop");
         return session;
     }
 
@@ -118,13 +109,16 @@ public class EmailCollector implements VoteCollector {
 
     @Override
     public void sendAck(Vote vote) {
-        if (VERBOSE) System.out.println("Sending ACK");
+        if (VERBOSE) {
+            //todo needs number to reply to
+            System.out.println("Sending ACK to :" );
+        }
 
-        String url ="";
+    /*    //String url ="";
 
-        //String url="http://www.kapow.co.uk/scripts/sendsms.php?"+
-        //    "username=LFC1989&password=NUT1989&mobilBurtons suitse="+number+
-       //     "&sms="+"Handivote+thanks+you+for+your+vote";
+        String url="http://www.kapow.co.uk/scripts/sendsms.php?"+
+            "username=LFC1989&password=NUT1989&mobilBurtons suitse="+number+
+            "&sms="+"Handivote+thanks+you+for+your+vote";
 
 
 
@@ -169,7 +163,7 @@ public class EmailCollector implements VoteCollector {
             // Release the connection.
             method.releaseConnection();
         }
-
+*/
     }
 
 }

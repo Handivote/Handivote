@@ -17,6 +17,7 @@ public class ReferendumManager {
             Executors.newScheduledThreadPool(1);
 
     public void setSchedule(ReferendumFactory rf, Properties properties, Date startDate, Date endDate) {
+        //todo error handling
         long delay = startDate.getTime() - System.currentTimeMillis();
         long endDelay = endDate.getTime() - System.currentTimeMillis();
         final Runnable ref = new Runnable() {
@@ -30,6 +31,7 @@ public class ReferendumManager {
                 catch (Exception e){
 
                     e.getStackTrace();
+                    // scheduling lib. silences exceptions
                     System.out.println(e.getMessage());
                 }
             }
@@ -61,7 +63,8 @@ public class ReferendumManager {
             fName = args[0];
 
         } else {
-            fName = "test.properties";
+            //todo usage instructions
+            fName = "emailtest.properties";
         }
 
         Properties properties = getProperties(fName);

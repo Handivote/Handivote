@@ -32,7 +32,7 @@ public class VoteRecorder {
 
     public boolean recordVote(Vote vote){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
-        // vaildate vote
+        // todo vaildate vote 'yes' ,'no' or user-defined option etc.
 
 
         //System.out.println("recorded: " + vote.toString()+ " " + map.size());

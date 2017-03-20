@@ -18,11 +18,11 @@ class StoreCardNumbers {
     private String numFile;
 
 
-    public StoreCardNumbers(UUID refID, String numFile) throws IOException {
+    public StoreCardNumbers(UUID refID, String numbersFile) throws IOException {
         this.refID = refID;
         this.db = setupDB(refID);
-        this.numFile = numFile;
-        readFromFile();
+        String numFile = numbersFile;
+        readFromFile(numFile);
     }
 
     StoreCardNumbers(UUID refID, ArrayList numsList) {
@@ -36,9 +36,9 @@ class StoreCardNumbers {
         db = DBMaker.fileDB(refId + ".register").fileMmapEnable().make();
         return db;
     }
-    void readFromFile() throws IOException {
+    void readFromFile(String numFile) throws IOException {
         numsList = new ArrayList();
-        File file = new File("./" + "email_nums.txt");
+        File file = new File("./" + numFile);
         FileReader fr = null;
         fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
