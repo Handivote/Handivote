@@ -1,6 +1,17 @@
-import javax.mail.*;
+import javax.mail.BodyPart;
+import javax.mail.Flags;
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Store;
+import javax.mail.internet.MimeMultipart;
 import javax.mail.search.FlagTerm;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Properties;
+import java.util.UUID;
 
 public class EmailCollector implements VoteCollector {
 
@@ -14,7 +25,7 @@ public class EmailCollector implements VoteCollector {
     private static Session session;
     private static Store store;
     private static ArrayList emails;
-    private  UUID refID;
+    private UUID refID;
 
 
 
@@ -57,8 +68,9 @@ public class EmailCollector implements VoteCollector {
         try {
             messages = inbox.search(ft);
             for (Message m : messages) {
-                System.out.println("delivered message from : " +  m.getSubject().toString());
-
+                //todo log
+                //System.out.println("delivered message from : " +  m.getSubject().toString());
+            //todo send ack
                 //emails.add(VoteParser.extractDetails(m.getSubject() + m.getContent()));
             }
         } catch (MessagingException e) {
@@ -91,11 +103,13 @@ public class EmailCollector implements VoteCollector {
             ballots = readMessages(refID);
             for (int i=0; i<ballots.length; i++){
                 long timestamp = new Date().getTime();
-                String[] content = ((String) ballots[i].getContent()).split(" ");
-                String[] optionsBallot = Arrays.copyOfRange(content, 4, content.length);
+                System.out.println((getTextFromMessage(ballots[i])));
+                String[] content = (getTextFromMessage(ballots[i])).split(" ");
+
+                String[] optionsBallot = Arrays.copyOfRange(content, 3, content.length);
                 Vote vote = new Vote(content[0], content[1], timestamp, "1", optionsBallot);
                 voteRecorder.recordVote(vote);
-                System.out.println("delivered message from : " +  content[0].toString() + vote.toString());
+                //System.out.println("c v message content : " +  content[0].toString() +" vote " + vote.toString());
                 sendAck(vote);
             }
         } catch (Exception e) {
@@ -105,13 +119,41 @@ public class EmailCollector implements VoteCollector {
             voteRecorder.closeDB();
         }
     }
+    private String getTextFromMessage(Message message) throws Exception {
+        String result = "";
+        if (message.isMimeType("text/plain")) {
+            result = message.getContent().toString();
+        } else if (message.isMimeType("multipart/*")) {
+            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
+            result = getTextFromMimeMultipart(mimeMultipart);
+        }
+        return result;
+    }
 
+    private String getTextFromMimeMultipart(
+            MimeMultipart mimeMultipart) throws Exception{
+        String result = "";
+        int count = mimeMultipart.getCount();
+        for (int i = 0; i < count; i++) {
+            BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+            if (bodyPart.isMimeType("text/plain")) {
+                result = result + "\n" + bodyPart.getContent();
+                break; // without break same text appears twice in my tests
+            } else if (bodyPart.isMimeType("text/html")) {
+                String html = (String) bodyPart.getContent();
+                result = result + "\n" + org.jsoup.Jsoup.parse(html).text();
+            } else if (bodyPart.getContent() instanceof MimeMultipart){
+                result = result + getTextFromMimeMultipart((MimeMultipart)bodyPart.getContent());
+            }
+        }
+        return result;
+    }
 
     @Override
     public void sendAck(Vote vote) {
         if (VERBOSE) {
             //todo needs number to reply to
-            System.out.println("Sending ACK to :" );
+            //System.out.println("Sending ACK to :" );
         }
 
     /*    //String url ="";

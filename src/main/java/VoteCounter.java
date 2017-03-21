@@ -43,6 +43,8 @@ public class VoteCounter {
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
             publishResults(parts[0], parts[4]);
             for(String  opt : vote.getBallot()) {
+                //todo check for yes, no, or custom options and invalid options
+                // todo
                 if ( Integer.parseInt(opt)>0  && (Integer.parseInt(opt) <5)) {
                     Integer i = ballotCount.get(opt);
                     //System.out.println(" putting " + opt  + ": " + String.valueOf(i+1));

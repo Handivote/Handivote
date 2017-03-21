@@ -27,11 +27,11 @@ public class ReferendumManager {
                 try {
 
                     referendum = rf.buildReferendum(properties);
-                }
-                catch (Exception e){
+                } catch (Exception e) {
 
                     e.getStackTrace();
                     // scheduling lib. silences exceptions
+                    System.out.println(e.toString());
                     System.out.println(e.getMessage());
                 }
             }
@@ -40,11 +40,17 @@ public class ReferendumManager {
         scheduler.schedule(new Runnable() {
             @Override
             public void run() {
-                referendum.publishResults(referendum.getRefID());
+                try {
+                    referendum.publishResults(referendum.getRefID());
+                    refHandle.cancel(true);
+                    System.out.println("stopping" + referendum.toString());
+                } catch (Exception e) {
+                    System.out.println(e.toString());
+                    System.out.println(e.getMessage());
+                } finally {
+                    System.exit(0);
+                }
 
-                refHandle.cancel(true);
-                System.out.println("stopping" + referendum.toString());
-                System.exit(0);
             }
         }, endDelay, MILLISECONDS);
 

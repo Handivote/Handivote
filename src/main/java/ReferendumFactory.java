@@ -75,7 +75,7 @@ public class ReferendumFactory {
         //todo load nums from file
         StoreCardNumbers scn = null;
         try {
-            scn = new StoreCardNumbers(refID, "emailnums.txt");
+            scn = new StoreCardNumbers(refID, "emailnums.text");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -36,6 +36,7 @@ public class PINValidator {
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
             // get vote from storage, if not checked, check and return to store, else do nothing,
             if (!vote.isPinVerified()) {
+                //todo logging
                 System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID()));
                 if (vote.getVoterPIN().equals(cardsMap.get(vote.getVoterID())) ) {
                     vote.resetVoterPIN();
