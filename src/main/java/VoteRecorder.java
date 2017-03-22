@@ -20,7 +20,6 @@ public class VoteRecorder {
 
     public void closeDB(){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
-        //System.out.println(map.size());
         map.close();
         db.close();
     }
@@ -33,15 +32,11 @@ public class VoteRecorder {
     public boolean recordVote(Vote vote){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
         // todo vaildate vote 'yes' ,'no' or user-defined option etc.
-
-
-        //System.out.println("recorded: " + vote.toString()+ " " + map.size());
         if (map.containsKey(vote.getVoterID())){
             String [] parts = map.get(vote.getVoterID()).split(" ");
-            //System.out.println(parts[4].toString());
+            System.out.println("paprts " + Arrays.toString(parts));
             String[] storedBallot = parts[4].split(" ");
             Vote storedVote = new Vote(parts[0],parts[1],Long.parseLong(parts[2]),parts[3],storedBallot);
-            //System.out.println(Arrays.toString(storedVote.getBallot()));
             if(!Arrays.equals(vote.getBallot(), storedVote.getBallot())){
                 vote.setValid(false);
                 vote.setPinVerification(true);

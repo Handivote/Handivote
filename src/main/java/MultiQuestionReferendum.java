@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class SimpleReferendum implements Referendum {
+
+public class MultiQuestionReferendum implements Referendum {
     private UUID refID;
+    private ArrayList<Question> questions;
 
     @Override
     public UUID getRefID() {
@@ -10,7 +12,8 @@ public class SimpleReferendum implements Referendum {
     }
 
     @Override
-    public void createReferendum(UUID refID,  ArrayList<Question> questions, VoteCollector collector) {
+    public void createReferendum(UUID refID, ArrayList<Question> questions, VoteCollector collector) {
+        //todo sort out questions problem  - multi
         this.refID = refID;
         collector.collectVotes(refID);
         Validator validator = new Validator(refID);
@@ -20,8 +23,7 @@ public class SimpleReferendum implements Referendum {
     @Override
     public void publishResults(UUID refID) {
         VoteCounter vc = new VoteCounter(refID);
-        vc.calculateResults();
-
+        vc.multQuestionCalculateResults(questions);
     }
 
 }

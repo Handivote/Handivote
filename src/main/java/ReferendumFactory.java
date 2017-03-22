@@ -8,7 +8,7 @@ public class ReferendumFactory {
 
 
 
-    private VoteCollector setCollector(UUID refID, String voteCollectorType){
+    private VoteCollector setCollector(UUID refID, String voteCollectorType, int numberOfQuestions){
         VoteCollector voteCollector;
         switch (voteCollectorType){
             case "mockEmail":
@@ -21,7 +21,7 @@ public class ReferendumFactory {
                 voteCollector = new SMSCollector();
                 break;
             case "Test":
-                voteCollector = new TestCollector();
+                voteCollector = new TestCollector(numberOfQuestions);
                 break;
             default:
                 throw new IllegalArgumentException("Invalid Collector type: " + voteCollectorType);
@@ -52,13 +52,21 @@ public class ReferendumFactory {
             }
             Question question = new Question(1, 0, properties.getProperty("question1"), options );
             questions.add(question);
+            for(int x=0; x<questions.size(); x++){
+                System.out.println(questions.get(x));
+            }
         }
 
         Referendum referendum;
-        VoteCollector voteCollector = setCollector(refID, properties.getProperty("voteMethod"));
+        int numberOfQuestions = Integer.parseInt(properties.getProperty("numberOfQuestions"));
+        VoteCollector voteCollector = setCollector(refID, properties.getProperty("voteMethod"),numberOfQuestions);
         switch (refType){
             case "simple":
                 referendum = new SimpleReferendum();
+                referendum.createReferendum(refID, questions, voteCollector);
+                break;
+            case "multi":
+                referendum = new MultiQuestionReferendum();
                 referendum.createReferendum(refID, questions, voteCollector);
                 break;
 

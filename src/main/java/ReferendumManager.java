@@ -1,3 +1,6 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -11,7 +14,7 @@ import java.util.concurrent.ScheduledFuture;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 public class ReferendumManager {
-
+    private static Logger LOGGER = LoggerFactory.getLogger(ReferendumManager.class);
     private Referendum referendum;
     private final ScheduledExecutorService scheduler =
             Executors.newScheduledThreadPool(1);
@@ -25,14 +28,14 @@ public class ReferendumManager {
             @Override
             public void run() {
                 try {
-
                     referendum = rf.buildReferendum(properties);
+                    LOGGER.info("Created referendum : " + referendum.getRefID().toString());
                 } catch (Exception e) {
-
-                    e.getStackTrace();
+                    LOGGER.error(e.getMessage());
+                    LOGGER.error(e.toString());
+                    LOGGER.debug(String.valueOf(e.getStackTrace()));
                     // scheduling lib. silences exceptions
-                    System.out.println(e.toString());
-                    System.out.println(e.getMessage());
+
                 }
             }
         };
@@ -43,10 +46,11 @@ public class ReferendumManager {
                 try {
                     referendum.publishResults(referendum.getRefID());
                     refHandle.cancel(true);
-                    System.out.println("stopping" + referendum.toString());
+                    LOGGER.info("Completed referendum : " + referendum.getRefID().toString());
                 } catch (Exception e) {
-                    System.out.println(e.toString());
-                    System.out.println(e.getMessage());
+                    LOGGER.error(e.getMessage());
+                    LOGGER.error(e.toString());
+                    LOGGER.debug(String.valueOf(e.getStackTrace()));
                 } finally {
                     System.exit(0);
                 }
@@ -67,10 +71,11 @@ public class ReferendumManager {
 
         if (args.length > 0) {
             fName = args[0];
+            System.out.println("opening " + fName);
 
         } else {
-            //todo usage instructions
-            fName = "emailtest.properties";
+            //todo usage instructions passwords etc,.
+            fName = "test.properties";
         }
 
         Properties properties = getProperties(fName);

@@ -6,7 +6,11 @@ import java.util.UUID;
 
 public class TestCollector implements VoteCollector {
     private int numberOfVotes;
+    private int numberOfQuestions = 4;
 
+    public TestCollector(int numberOfQuestions) {
+        this.numberOfQuestions = numberOfQuestions;
+    }
 
     public int getNumberOfVotes() {
         return numberOfVotes;
@@ -21,13 +25,14 @@ public class TestCollector implements VoteCollector {
     public void collectVotes(UUID refID) {
         VoteRecorder voteRecorder = new VoteRecorder(refID);
          ArrayList<String[]> ballots = null;
-         MockEmailGenerator mockEmailGenerator = new MockEmailGenerator();
+         MockEmailGenerator mockEmailGenerator = new MockEmailGenerator(numberOfQuestions);
         try {
             ballots = mockEmailGenerator.createMockEmailList(refID.toString() + "_nums.txt");
 
             for (int i=0; i<ballots.size(); i++){
                 long timestamp = new Date().getTime();
                 String [] content = ballots.get(i);
+                System.out.println("content: " + ballots.get(i));
                 //System.out.println("content :" + content[1]);
                 String [] id = content[1].trim().split(" ");
                 //String ballot = content.substring(4);
@@ -49,7 +54,7 @@ public class TestCollector implements VoteCollector {
 
 
     @Override
-    public void sendAck(Vote vote) {
+    public void sendAck(String recipient) {
 
     }
 }

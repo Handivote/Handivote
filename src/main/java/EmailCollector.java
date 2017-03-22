@@ -91,10 +91,6 @@ public class EmailCollector implements VoteCollector {
         }
     }
 
-
-
-
-
     @Override
     public void collectVotes(UUID refID)  {
         VoteRecorder voteRecorder = new VoteRecorder(refID);
@@ -110,7 +106,7 @@ public class EmailCollector implements VoteCollector {
                 Vote vote = new Vote(content[0], content[1], timestamp, "1", optionsBallot);
                 voteRecorder.recordVote(vote);
                 //System.out.println("c v message content : " +  content[0].toString() +" vote " + vote.toString());
-                sendAck(vote);
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -150,10 +146,10 @@ public class EmailCollector implements VoteCollector {
     }
 
     @Override
-    public void sendAck(Vote vote) {
+    public void sendAck(String recipient) {
         if (VERBOSE) {
             //todo needs number to reply to
-            //System.out.println("Sending ACK to :" );
+            System.out.println("Sending ACK to :" + recipient);
         }
 
     /*    //String url ="";

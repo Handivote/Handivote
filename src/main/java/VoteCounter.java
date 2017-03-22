@@ -1,3 +1,4 @@
+import org.jetbrains.annotations.NotNull;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
@@ -8,6 +9,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -25,12 +27,22 @@ public class VoteCounter {
         this.refID = refID;
 
     }
+    public void multQuestionCalculateResults(ArrayList<Question> questions) {
+        HTreeMap<String, String> voteMap = getVoteStore();
+        HashMap<String,Integer> ballotCount = new HashMap<String,Integer>();
+        for(String key : voteMap.getKeys()) {
+            String[] parts = voteMap.get(key).split(" ");
+            //System.out.println(Arrays.toString(parts));
+            Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
+            //System.out.println(vote.toString());
+        }
+
+    }
 
     public void calculateResults() {
 
         System.out.println("results");
-        voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
-        HTreeMap<String, String> voteMap = voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
+        HTreeMap<String, String> voteMap = getVoteStore();
         HashMap<String,Integer> ballotCount = new HashMap<String,Integer>();
         String badVote = "Invalid Option";
         ballotCount.put("1",0);
@@ -61,6 +73,12 @@ public class VoteCounter {
         writeToFile("3", option3);
         writeToFile("4", option4);
         writeToFile("badVotes", badVotes);
+    }
+
+    @NotNull
+    private HTreeMap<String, String> getVoteStore() {
+        voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
+        return voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
     }
 
     private void publishResults(String voterID, String ballot) {

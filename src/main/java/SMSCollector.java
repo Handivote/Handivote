@@ -7,7 +7,7 @@ public class SMSCollector implements VoteCollector {
     }
 
     @Override
-    public void sendAck(Vote vote) {
+    public void sendAck(String recipient) {
 
     }
 }

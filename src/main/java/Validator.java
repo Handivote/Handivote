@@ -6,13 +6,13 @@ import org.mapdb.Serializer;
 import java.util.Set;
 import java.util.UUID;
 
-public class PINValidator {
+public class Validator {
 
     private UUID refID;
     private DB voteDB;
     private DB cardsDB;
 
-    public PINValidator(UUID refID) {
+    public Validator(UUID refID) {
         this.refID = refID;
         setupDB(refID);
     }
@@ -20,6 +20,12 @@ public class PINValidator {
     private  void setupDB(UUID refID) {
         voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
         cardsDB = DBMaker.fileDB(refID + ".register").fileMmapEnable().make();
+
+    }
+    public Vote validateVoteOptions(Vote vote){
+        vote.getBallot();
+        return vote;
+
 
     }
 
