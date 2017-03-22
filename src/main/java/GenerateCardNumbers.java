@@ -1,3 +1,6 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -10,7 +13,7 @@ import java.util.UUID;
  */
 class GenerateCardNumbers
 {
-
+    private static Logger LOGGER = LoggerFactory.getLogger(GenerateCardNumbers.class);
     private Integer digits;
     private String password1;
 

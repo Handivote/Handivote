@@ -3,6 +3,8 @@ import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
 import org.mapdb.Serializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -21,7 +23,7 @@ public class VoteCounter {
     private ArrayList <String> option3 = new ArrayList<>();
     private ArrayList <String> option4 = new ArrayList<>();
     private ArrayList <String> badVotes = new ArrayList<>();
-
+    private static Logger LOGGER = LoggerFactory.getLogger(VoteCounter.class);
 
     public VoteCounter(UUID refID) {
         this.refID = refID;

@@ -3,6 +3,8 @@ import com.icegreen.greenmail.user.UserException;
 import com.icegreen.greenmail.util.DummySSLSocketFactory;
 import com.icegreen.greenmail.util.GreenMail;
 import com.icegreen.greenmail.util.ServerSetupTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -12,13 +14,12 @@ import java.security.Security;
 import java.util.*;
 
 public class MockEmailCollector implements VoteCollector{
+    private static Logger LOGGER = LoggerFactory.getLogger(MockEmailCollector.class);
 
     private static final String USER_PASSWORD = "handivote";
     private static final String USER_NAME = "handivote";
     private static final String EMAIL_USER_ADDRESS = "handivote@localhost";
     private static final String EMAIL_TO = "@kapow.co.uk";
-    private static final String EMAIL_SUBJECT = "Test E-Mail";
-    private static final String EMAIL_TEXT = "This is a test e-mail.";
     private static final String LOCALHOST = "127.0.0.1";
     private static MockEmailGenerator mockEmails = new MockEmailGenerator();
     private static ArrayList emails;

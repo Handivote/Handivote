@@ -2,12 +2,14 @@ import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
 import org.mapdb.Serializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Set;
 import java.util.UUID;
 
 public class Validator {
-
+    private static Logger LOGGER = LoggerFactory.getLogger(Validator.class);
     private UUID refID;
     private DB voteDB;
     private DB cardsDB;

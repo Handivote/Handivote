@@ -2,6 +2,8 @@ import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import org.mapdb.HTreeMap;
 import org.mapdb.Serializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,7 +18,7 @@ class StoreCardNumbers {
     private UUID refID;
     private DB db;
     private String numFile;
-
+    private static Logger LOGGER = LoggerFactory.getLogger(StoreCardNumbers.class);
 
     public StoreCardNumbers(UUID refID, String numbersFile) throws IOException {
         this.refID = refID;

@@ -8,3 +8,50 @@
 2017-03-22 15:25:14 [pool-1-thread-1] INFO :: Completed referendum : e7937845-9ac4-4d8a-b4a9-8bda40f9626c
 2017-03-22 15:28:24 [pool-1-thread-1] INFO :: Created referendum : 40dee0fc-19e5-455a-9e37-059a817dda5c
 2017-03-22 15:28:24 [pool-1-thread-1] INFO :: Completed referendum : 40dee0fc-19e5-455a-9e37-059a817dda5c
+2017-03-22 16:53:29 [pool-1-thread-1] ERROR:: File is already opened and is locked: e32cf319-1406-4e1f-bfd4-71e2553126d4.raw
+2017-03-22 16:53:29 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: e32cf319-1406-4e1f-bfd4-71e2553126d4.raw
+2017-03-22 16:53:29 [pool-1-thread-1] ERROR:: 
+2017-03-22 16:53:29 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:10:55 [pool-1-thread-1] ERROR:: File is already opened and is locked: 84f36e72-5c38-4eb5-a974-7608007abb10.raw
+2017-03-22 17:10:55 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 84f36e72-5c38-4eb5-a974-7608007abb10.raw
+2017-03-22 17:10:55 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:10:55 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:39:29 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:39:29 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:39:29 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:39:29 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:07 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:07 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:07 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:07 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:21 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:21 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:21 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:21 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:42 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:42 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:56:42 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:56:42 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:57:02 [pool-1-thread-1] ERROR:: File is already opened and is locked: 2f1c0495-4887-4f0f-b15f-65eef13fdd33.raw
+2017-03-22 17:57:02 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 2f1c0495-4887-4f0f-b15f-65eef13fdd33.raw
+2017-03-22 17:57:02 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:57:02 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 17:58:09 [pool-1-thread-1] ERROR:: File is already opened and is locked: 2faa3d0a-cd39-4b2f-aabe-01815c23782c.raw
+2017-03-22 17:58:09 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 2faa3d0a-cd39-4b2f-aabe-01815c23782c.raw
+2017-03-22 17:58:09 [pool-1-thread-1] ERROR:: 
+2017-03-22 17:58:09 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 18:08:27 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-22 18:08:27 [pool-1-thread-1] ERROR:: File is already opened and is locked: 523873e6-5ba1-4fb4-a608-1205ab2e96f4.raw
+2017-03-22 18:08:27 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 523873e6-5ba1-4fb4-a608-1205ab2e96f4.raw
+2017-03-22 18:08:27 [pool-1-thread-1] ERROR:: 
+2017-03-22 18:08:27 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 18:17:35 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-22 18:17:35 [pool-1-thread-1] ERROR:: File is already opened and is locked: 20d36b8e-e251-4ba4-9e5e-c935e41be619.raw
+2017-03-22 18:17:35 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 20d36b8e-e251-4ba4-9e5e-c935e41be619.raw
+2017-03-22 18:17:35 [pool-1-thread-1] ERROR:: 
+2017-03-22 18:17:35 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-22 18:22:09 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: File is already opened and is locked: f6e1aea0-d6f2-4e49-8838-c14614da5c4e.raw
+2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: f6e1aea0-d6f2-4e49-8838-c14614da5c4e.raw
+2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: 
+2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
