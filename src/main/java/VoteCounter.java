@@ -11,7 +11,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -29,7 +28,7 @@ public class VoteCounter {
         this.refID = refID;
 
     }
-    public void multQuestionCalculateResults(ArrayList<Question> questions) {
+    public void multiQuestionCalculateResults(ArrayList<Question> questions) {
         HTreeMap<String, String> voteMap = getVoteStore();
         HashMap<String,Integer> ballotCount = new HashMap<String,Integer>();
         for(String key : voteMap.getKeys()) {

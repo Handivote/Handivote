@@ -55,3 +55,352 @@
 2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: f6e1aea0-d6f2-4e49-8838-c14614da5c4e.raw
 2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: 
 2017-03-22 18:22:09 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-23 06:55:46 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 06:55:46 [pool-1-thread-1] ERROR:: File is already opened and is locked: 7cdddbd1-22b7-4498-b5e3-d2d1f5426da3.raw
+2017-03-23 06:55:46 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 7cdddbd1-22b7-4498-b5e3-d2d1f5426da3.raw
+2017-03-23 06:55:46 [pool-1-thread-1] ERROR:: 
+2017-03-23 06:55:46 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-23 06:59:43 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 06:59:43 [pool-1-thread-1] INFO :: Setting up :0adfef61-09e5-497e-998d-0df480e428b0
+2017-03-23 06:59:43 [pool-1-thread-1] INFO :: Setting up :0adfef61-09e5-497e-998d-0df480e428b0
+2017-03-23 06:59:43 [pool-1-thread-1] ERROR:: File is already opened and is locked: 0adfef61-09e5-497e-998d-0df480e428b0.raw
+2017-03-23 06:59:43 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: 0adfef61-09e5-497e-998d-0df480e428b0.raw
+2017-03-23 06:59:43 [pool-1-thread-1] ERROR:: 
+2017-03-23 06:59:43 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-23 07:00:32 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 07:00:50 [pool-1-thread-1] INFO :: Setting up :d2797345-1321-4d0a-ad44-50da911e5494
+2017-03-23 07:00:59 [pool-1-thread-1] INFO :: Setting up :d2797345-1321-4d0a-ad44-50da911e5494
+2017-03-23 07:00:59 [pool-1-thread-1] ERROR:: File is already opened and is locked: d2797345-1321-4d0a-ad44-50da911e5494.raw
+2017-03-23 07:00:59 [pool-1-thread-1] ERROR:: org.mapdb.DBException$FileLocked: File is already opened and is locked: d2797345-1321-4d0a-ad44-50da911e5494.raw
+2017-03-23 07:00:59 [pool-1-thread-1] ERROR:: 
+2017-03-23 07:00:59 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0001
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0002
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0003
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0004
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0005
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0006
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0007
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0008
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0009
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0010
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0011
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0012
+2017-03-23 07:03:02 [pool-1-thread-1] INFO :: Recorded vote from: 0013
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0014
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0015
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0016
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0017
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0018
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0019
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0020
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0021
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0022
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0023
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0024
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0025
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0026
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0027
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0028
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0029
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0030
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0031
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0032
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0033
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0034
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0035
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0036
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0037
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0038
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0039
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0040
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0041
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0042
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0043
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0044
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0045
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0046
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0047
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0048
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0049
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0050
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0051
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0052
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0053
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0054
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0055
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0056
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0057
+2017-03-23 07:03:03 [pool-1-thread-1] INFO :: Recorded vote from: 0058
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0059
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0060
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0061
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0062
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0063
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0064
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0065
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0066
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0067
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0068
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0069
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0070
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0071
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0072
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0073
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0074
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0075
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0076
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0077
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0078
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0079
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0080
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0081
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0082
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0083
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0084
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0085
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0086
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0087
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0088
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0089
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0090
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0091
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0092
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0093
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0094
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0095
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0096
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0097
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0098
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0099
+2017-03-23 07:03:04 [pool-1-thread-1] INFO :: Recorded vote from: 0100
+2017-03-23 07:03:05 [pool-1-thread-1] INFO :: Closing :fcc5da01-520d-42f6-a035-0490bfacd5ef
+2017-03-23 07:03:05 [pool-1-thread-1] INFO :: Created Referendum :fcc5da01-520d-42f6-a035-0490bfacd5ef Type: multi
+2017-03-23 07:03:05 [pool-1-thread-1] INFO :: Created referendum : fcc5da01-520d-42f6-a035-0490bfacd5ef
+2017-03-23 07:03:05 [pool-1-thread-1] INFO :: Completed referendum : fcc5da01-520d-42f6-a035-0490bfacd5ef
+2017-03-23 07:12:36 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 07:12:36 [pool-1-thread-1] INFO :: Recorded vote from: 0001
+2017-03-23 07:12:36 [pool-1-thread-1] INFO :: Recorded vote from: 0002
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0003
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0004
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0005
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0006
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0007
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0008
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0009
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0010
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0011
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0012
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0013
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0014
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0015
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0016
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0017
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0018
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0019
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0020
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0021
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0022
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0023
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0024
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0025
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0026
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0027
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0028
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0029
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0030
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0031
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0032
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0033
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0034
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0035
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0036
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0037
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0038
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0039
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0040
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0041
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0042
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0043
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0044
+2017-03-23 07:12:37 [pool-1-thread-1] INFO :: Recorded vote from: 0045
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0046
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0047
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0048
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0049
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0050
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0051
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0052
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0053
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0054
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0055
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0056
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0057
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0058
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0059
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0060
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0061
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0062
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0063
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0064
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0065
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0066
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0067
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0068
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0069
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0070
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0071
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0072
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0073
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0074
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0075
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0076
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0077
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0078
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0079
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0080
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0081
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0082
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0083
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0084
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0085
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0086
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0087
+2017-03-23 07:12:38 [pool-1-thread-1] INFO :: Recorded vote from: 0088
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0089
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0090
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0091
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0092
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0093
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0094
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0095
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0096
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0097
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0098
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0099
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Recorded vote from: 0100
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Closing :7498c8ba-2f56-4af4-b1cb-90d29b21330a
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Created Referendum :7498c8ba-2f56-4af4-b1cb-90d29b21330a Type: multi
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Created referendum : 7498c8ba-2f56-4af4-b1cb-90d29b21330a
+2017-03-23 07:12:39 [pool-1-thread-1] INFO :: Completed referendum : 7498c8ba-2f56-4af4-b1cb-90d29b21330a
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0001
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0002
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0003
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0004
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0005
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0006
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0007
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0008
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0009
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0010
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0011
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0012
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0013
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0014
+2017-03-23 07:13:28 [pool-1-thread-1] INFO :: Recorded vote from: 0015
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0016
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0017
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0018
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0019
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0020
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0021
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0022
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0023
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0024
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0025
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0026
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0027
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0028
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0029
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0030
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0031
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0032
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0033
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0034
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0035
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0036
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0037
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0038
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0039
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0040
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0041
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0042
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0043
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0044
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0045
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0046
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0047
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0048
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0049
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0050
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0051
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0052
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0053
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0054
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0055
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0056
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0057
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0058
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0059
+2017-03-23 07:13:29 [pool-1-thread-1] INFO :: Recorded vote from: 0060
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0061
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0062
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0063
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0064
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0065
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0066
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0067
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0068
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0069
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0070
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0071
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0072
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0073
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0074
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0075
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0076
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0077
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0078
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0079
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0080
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0081
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0082
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0083
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0084
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0085
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0086
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0087
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0088
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0089
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0090
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0091
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0092
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0093
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0094
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0095
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0096
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0097
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0098
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0099
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Recorded vote from: 0100
+2017-03-23 07:13:30 [pool-1-thread-1] INFO :: Closing :2eb1f8de-00bc-450f-a5fd-05740d8944df
+2017-03-23 07:13:31 [pool-1-thread-1] INFO :: Created Referendum :2eb1f8de-00bc-450f-a5fd-05740d8944df Type: multi
+2017-03-23 07:13:31 [pool-1-thread-1] INFO :: Created referendum : 2eb1f8de-00bc-450f-a5fd-05740d8944df
+2017-03-23 07:13:31 [pool-1-thread-1] INFO :: Completed referendum : 2eb1f8de-00bc-450f-a5fd-05740d8944df
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Collector type: MultiTest
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0001
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0002
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0003
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0004
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0005
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0006
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0007
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0008
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0009
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Recorded vote from: 0010
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Closing :2cb1475a-2369-4482-b04b-ea2b56623f14
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Created Referendum :2cb1475a-2369-4482-b04b-ea2b56623f14 Type: multi
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Created referendum : 2cb1475a-2369-4482-b04b-ea2b56623f14
+2017-03-23 07:13:59 [pool-1-thread-1] INFO :: Completed referendum : 2cb1475a-2369-4482-b04b-ea2b56623f14

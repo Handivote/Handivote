@@ -13,10 +13,17 @@ public class Vote {
     private boolean pinVerified;
 
 
+    public Vote(String voterID, String voterPIN, long timestamp) {
+        this.voterID = voterID;
+        this.voterPIN = voterPIN;
+        this.timestamp = timestamp;
+    }
+
     public Vote(String voterID, String voterPIN, long timestamp, String questionID, String[] ballot) {
         this.voterID = voterID;
         this.voterPIN = voterPIN;
         this.timestamp = timestamp;
+
         this.questionID = questionID;
         this.ballot = ballot;
         this.valid = true;
