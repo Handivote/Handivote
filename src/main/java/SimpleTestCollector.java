@@ -10,10 +10,11 @@ import java.util.UUID;
 public class SimpleTestCollector implements VoteCollector {
     private static Logger LOGGER = LoggerFactory.getLogger(SimpleTestCollector.class);
     private int numberOfVotes;
-    private int numberOfQuestions = 4;
+    private ArrayList questions;
 
-    public SimpleTestCollector(int numberOfQuestions) {
-        this.numberOfQuestions = numberOfQuestions;
+    public SimpleTestCollector(ArrayList<Question> questions) {
+        this.questions = questions;
+
     }
 
     public int getNumberOfVotes() {
@@ -27,16 +28,16 @@ public class SimpleTestCollector implements VoteCollector {
 
     @Override
     public void collectVotes(UUID refID) {
-        VoteRecorder voteRecorder = new VoteRecorder(refID);
+        VoteRecorder voteRecorder = new VoteRecorder(refID, questions);
          ArrayList<String[]> ballots = null;
-         MockEmailGenerator mockEmailGenerator = new MockEmailGenerator(numberOfQuestions);
+         MockEmailGenerator mockEmailGenerator = new MockEmailGenerator();
         try {
             ballots = mockEmailGenerator.createMockEmailList(refID.toString() + "_nums.txt");
 
             for (int i=0; i<ballots.size(); i++){
                 long timestamp = new Date().getTime();
                 String [] content = ballots.get(i);
-                System.out.println("content: " + ballots.get(i));
+                // System.out.println("content: " + ballots.get(i));
                 //System.out.println("content :" + content[1]);
                 String [] id = content[1].trim().split(" ");
                 //String ballot = content.substring(4);

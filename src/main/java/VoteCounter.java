@@ -23,9 +23,11 @@ public class VoteCounter {
     private ArrayList <String> option4 = new ArrayList<>();
     private ArrayList <String> badVotes = new ArrayList<>();
     private static Logger LOGGER = LoggerFactory.getLogger(VoteCounter.class);
+    private ArrayList<Question> questions;
 
-    public VoteCounter(UUID refID) {
+    public VoteCounter(UUID refID, ArrayList<Question> questions) {
         this.refID = refID;
+        this.questions = questions;
 
     }
     public void multiQuestionCalculateResults(ArrayList<Question> questions) {
@@ -39,10 +41,26 @@ public class VoteCounter {
         }
 
     }
+    public String validateVoteOptions(Vote vote) {
+        String str = vote.ballotToString();
+        for (Question question : questions) {
+            ArrayList<QuestionOption> qOpt = question.getOptions();
+            for (QuestionOption questionOption : qOpt) {
+                if ((str.toLowerCase()).equals(questionOption.getOptionString())) {
+                    return questionOption.getOptionId();
+                } else {
+                    return str;
+                }
+            }
+        }
+        return str;
+    }
+
+
 
     public void calculateResults() {
 
-        System.out.println("results");
+        //System.out.println("results");
         HTreeMap<String, String> voteMap = getVoteStore();
         HashMap<String,Integer> ballotCount = new HashMap<String,Integer>();
         String badVote = "Invalid Option";
@@ -54,10 +72,16 @@ public class VoteCounter {
         for(String key : voteMap.getKeys()){
             String[] parts = voteMap.get(key).split(" ");
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
+            System.out.println("results" + vote.ballotToString());
+            System.out.println(validateVoteOptions(vote)); //todo votecollector fix for longer options
             publishResults(parts[0], parts[4]);
             for(String  opt : vote.getBallot()) {
+
                 //todo check for yes, no, or custom options and invalid options
                 // todo
+
+
+
                 if ( Integer.parseInt(opt)>0  && (Integer.parseInt(opt) <5)) {
                     Integer i = ballotCount.get(opt);
                     //System.out.println(" putting " + opt  + ": " + String.valueOf(i+1));
@@ -116,7 +140,6 @@ public class VoteCounter {
 
         for (String s : voteList) {
             try {
-                System.out.println(s);
                 bw.write(s + System.getProperty("line.separator"));
             } catch (IOException e) {
                 e.printStackTrace();

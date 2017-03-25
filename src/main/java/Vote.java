@@ -83,15 +83,17 @@ public class Vote {
     }
     @Override
     public String toString() {
-        return "" + voterID + " " + voterPIN + " " + timestamp + " " + questionID + " " + Arrays.toString(ballot).replace('[', ' ').replace(']', ' ').replace(',', ' ').trim();
+        return "" + voterID + " "
+                + voterPIN + " "
+                + timestamp + " "
+                + questionID + " "
+                + Arrays.toString(ballot).replace('[', ' ')
+                .replace(']', ' ').replace(',', ' ').trim();
     }
-    private String ballotToString(String [][] ballot){
-        String ballotString = null;
+    public String ballotToString(){
+        String ballotString = "";
         for (int i=0; i<ballot.length;i++){
             ballotString += ballot[i];
-            for(int j=0; j<ballot[i].length;j++){
-                ballotString += ballot[i][j];
-            }
         }
 
         return ballotString;

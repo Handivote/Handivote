@@ -57,7 +57,7 @@ class StoreCardNumbers {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(numsList.size());
+
     }
 
     void storeCardNumbers(){

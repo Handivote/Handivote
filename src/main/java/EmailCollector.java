@@ -25,9 +25,12 @@ public class EmailCollector implements VoteCollector {
     private static Session session;
     private static Store store;
     private static ArrayList emails;
+    private ArrayList questions;
     private UUID refID;
 
-
+    public EmailCollector(ArrayList<Question> questions) {
+        this.questions = questions;
+    }
 
 
     private static Session setupSession() throws Exception {
@@ -93,13 +96,12 @@ public class EmailCollector implements VoteCollector {
 
     @Override
     public void collectVotes(UUID refID)  {
-        VoteRecorder voteRecorder = new VoteRecorder(refID);
+        VoteRecorder voteRecorder = new VoteRecorder(refID, questions);
         Message[] ballots = null;
         try {
             ballots = readMessages(refID);
             for (int i=0; i<ballots.length; i++){
                 long timestamp = new Date().getTime();
-                System.out.println((getTextFromMessage(ballots[i])));
                 String[] content = (getTextFromMessage(ballots[i])).split(" ");
 
                 String[] optionsBallot = Arrays.copyOfRange(content, 3, content.length);

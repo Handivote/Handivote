@@ -3,20 +3,25 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 public class MockEmailGenerator {
     private int numberOfQuestions;
+    private ArrayList voteList = new ArrayList();
+
     public MockEmailGenerator(int numberOfQuestions) {
         this.numberOfQuestions = numberOfQuestions;
     }
 
-    ArrayList voteList = new ArrayList();
+
+
 
     public MockEmailGenerator() {
-
+        this(1);
     }
+
+
+
 
     private void readNums(String numFile) throws IOException {
         String[] arr;
@@ -37,7 +42,7 @@ public class MockEmailGenerator {
 
                 //voteList.add([generateMobileNumber(), " "+ line + " ", addRandomVote())];
                 voteList.add(arr);
-                System.out.println(Arrays.toString(arr));
+                //System.out.println(Arrays.toString(arr));
             }
 
         }
@@ -49,7 +54,7 @@ public class MockEmailGenerator {
                 arr[2] = addRandomVote();
                 //voteList.add([generateMobileNumber(), " "+ line + " ", addRandomVote())];
                 voteList.add(arr);
-                System.out.println(arr[0] + arr[1] + arr[2]);
+               // System.out.println(arr[0] + arr[1] + arr[2]);
             }
         }
         br.close();

@@ -11,6 +11,16 @@ public class MultiQuestionReferendum implements Referendum {
     private ArrayList<Question> questions;
 
     @Override
+    public void setQuestions(ArrayList questions) {
+        this.questions = questions;
+    }
+
+    @Override
+    public ArrayList getQuestions() {
+        return questions;
+    }
+
+    @Override
     public UUID getRefID() {
         return refID;
     }
@@ -20,13 +30,15 @@ public class MultiQuestionReferendum implements Referendum {
         //todo sort out questions problem  - multi
         this.refID = refID;
         collector.collectVotes(refID);
-        Validator validator = new Validator(refID);
+        Validator validator = new Validator(refID, getQuestions());
         validator.validateVoterPIN();
     }
 
+
+
     @Override
     public void publishResults(UUID refID) {
-        VoteCounter vc = new VoteCounter(refID);
+        VoteCounter vc = new VoteCounter(refID, questions);
         vc.multiQuestionCalculateResults(questions);
     }
 

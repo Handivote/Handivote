@@ -75,7 +75,7 @@ public class ReferendumManager {
 
         } else {
             //todo usage instructions passwords etc,.
-            fName = "test.properties";
+            fName = "src/main/resources/test.properties";
         }
 
         Properties properties = getProperties(fName);

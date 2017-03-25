@@ -5,17 +5,20 @@ import org.mapdb.Serializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.UUID;
 
 public class Validator {
     private static Logger LOGGER = LoggerFactory.getLogger(Validator.class);
     private UUID refID;
+    private ArrayList questions;
     private DB voteDB;
     private DB cardsDB;
 
-    public Validator(UUID refID) {
+    public Validator(UUID refID, ArrayList questions) {
         this.refID = refID;
+        this.questions = questions;
         setupDB(refID);
     }
 
@@ -24,19 +27,13 @@ public class Validator {
         cardsDB = DBMaker.fileDB(refID + ".register").fileMmapEnable().make();
 
     }
-    public Vote validateVoteOptions(Vote vote){
-        vote.getBallot();
-        return vote;
 
-
-    }
 
     public void validateVoterPIN() {
         HTreeMap<String, String> voteMap = voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
         HTreeMap<String, String> cardsMap = cardsDB.hashMap("numsMap", Serializer.STRING, Serializer.STRING).createOrOpen();
         Set<String> keys = voteMap.getKeys();
         Object[] arr = keys.toArray();
-        System.out.println(voteMap.size());
         for (int i = 0; i < keys.size(); i++) {
             String strVote = voteMap.get(arr[i]);
             String[] parts = strVote.split(" ");
@@ -45,10 +42,10 @@ public class Validator {
             // get vote from storage, if not checked, check and return to store, else do nothing,
             if (!vote.isPinVerified()) {
                 //todo logging
-                System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID()));
+                //System.out.println(vote.getVoterPIN() + ":" + cardsMap.get(vote.getVoterID()));
                 if (vote.getVoterPIN().equals(cardsMap.get(vote.getVoterID())) ) {
                     vote.resetVoterPIN();
-                    System.out.println(vote.toJSONString() + " validated");
+                    //System.out.println(vote.toJSONString() + " validated");
                 } else {
                     vote.setValid(false);
                     System.out.println(vote.toJSONString() + " \n processed bad vote");

@@ -1,3 +1,4 @@
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,7 +10,7 @@ public class ReferendumFactory {
 
     private static Logger LOGGER = LoggerFactory.getLogger(ReferendumFactory.class);
 
-    private VoteCollector setCollector(UUID refID, String voteCollectorType, int numberOfQuestions) {
+    private VoteCollector setCollector(UUID refID, String voteCollectorType, int numberOfQuestions, ArrayList<Question> questions) {
         VoteCollector voteCollector;
         LOGGER.info("Collector type: " + voteCollectorType);
         switch (voteCollectorType) {
@@ -17,16 +18,16 @@ public class ReferendumFactory {
                 voteCollector = new MockEmailCollector();
                 break;
             case "Email":
-                voteCollector = new EmailCollector();
+                voteCollector = new EmailCollector(questions);
                 break;
             case "SMS":
-                voteCollector = new SMSCollector();
+                voteCollector = new SMSCollector(questions);
                 break;
             case "Test":
-                voteCollector = new SimpleTestCollector(numberOfQuestions);
+                voteCollector = new SimpleTestCollector(questions);
                 break;
             case "MultiTest":
-                voteCollector = new MultiTestCollector(numberOfQuestions);
+                voteCollector = new MultiTestCollector(numberOfQuestions, questions);
                 break;
             default:
                 IllegalArgumentException exception = new IllegalArgumentException("Invalid Collector type: " + voteCollectorType);
@@ -49,22 +50,11 @@ public class ReferendumFactory {
 
         String refType = properties.getProperty("refType");
 
-        ArrayList<Question> questions = new ArrayList<Question>();
-        for (int i = 0; i < new Integer(properties.getProperty("numberOfQuestions")); i++) {
-            ArrayList<QuestionOption> options = new ArrayList<>();
-            for (int j = 1; j <= new Integer(properties.getProperty("numberOfOptions")); j++) {
-                options.add(new QuestionOption("" + j, "" + j, properties.getProperty("questionOption" + j)));
-            }
-            for (int n = 1; n <= Integer.parseInt(properties.getProperty("numberOfQuestions")); n++) {
-                Question question = new Question(1, 0, properties.getProperty("question" + String.valueOf(n)), options);
-                questions.add(question);
-            }
-
-        }
+        ArrayList<Question> questions = loadQuestions(properties);
 
         Referendum referendum;
         int numberOfQuestions = Integer.parseInt(properties.getProperty("numberOfQuestions"));
-        VoteCollector voteCollector = setCollector(refID, properties.getProperty("voteMethod"), numberOfQuestions);
+        VoteCollector voteCollector = setCollector(refID, properties.getProperty("voteMethod"), numberOfQuestions, questions);
         switch (refType) {
             case "simple":
                 referendum = new SimpleReferendum();
@@ -81,6 +71,23 @@ public class ReferendumFactory {
         }
         LOGGER.info("Created Referendum :"+ referendum.getRefID() + " Type: " + refType);
         return referendum;
+    }
+
+    @NotNull
+    private ArrayList<Question> loadQuestions(Properties properties) {
+        ArrayList<Question> questions = new ArrayList<Question>();
+        for (int i = 0; i < new Integer(properties.getProperty("numberOfQuestions")); i++) {
+            ArrayList<QuestionOption> options = new ArrayList<>();
+            for (int j = 1; j <= new Integer(properties.getProperty("numberOfOptions")); j++) {
+                options.add(new QuestionOption("" + (i+1), "" + j, properties.getProperty("questionOption" + j)));
+            }
+            for (int n = 1; n <= Integer.parseInt(properties.getProperty("numberOfQuestions")); n++) {
+                Question question = new Question(n, 0, properties.getProperty("question" + String.valueOf(n)), options);
+                questions.add(question);
+            }
+
+        }
+        return questions;
     }
 
     private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2) {

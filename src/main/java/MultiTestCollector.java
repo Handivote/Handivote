@@ -11,7 +11,7 @@ public class MultiTestCollector  implements VoteCollector {
     private int numberOfVotes;
     private int numberOfQuestions = 4;
 
-    public MultiTestCollector(int numberOfQuestions) {
+    public MultiTestCollector(int numberOfQuestions, ArrayList<Question> questions) {
         this.numberOfQuestions = numberOfQuestions;
     }
 
