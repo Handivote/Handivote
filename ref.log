@@ -7579,3 +7579,1143 @@
 2017-03-25 19:19:07 [pool-1-thread-1] INFO :: Created referendum : 45c3dbe5-2588-4b00-8120-512a34e96db1
 2017-03-25 19:19:07 [pool-1-thread-1] ERROR:: For input string: "Y"
 2017-03-25 19:19:07 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 09:20:23 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 09:20:23 [pool-1-thread-1] INFO :: Setting up :4cb60af2-6b10-4f6a-992e-50af0651b8dd
+2017-03-26 09:20:23 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490516423926 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490516424000 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490516424022 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490516424045 1 4
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490516424067 1 4
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490516424089 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490516424111 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490516424134 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490516424156 1 3
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490516424178 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490516424200 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490516424222 1 y  e  s
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490516424245 1 x  x  x
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490516424267 1 3
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490516424289 1 4
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490516424311 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490516424333 1 3
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490516424356 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490516424378 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490516424400 1 x  x  x
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490516424422 1 3
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490516424445 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490516424467 1 3
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490516424489 1 5
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490516424511 1 Y
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490516424533 1 y  e  s
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490516424556 1 Y
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490516424578 1 N  O
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490516424600 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490516424622 1 Y  E  S
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490516424645 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490516424667 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490516424689 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490516424711 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490516424733 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490516424756 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490516424778 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490516424800 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490516424822 1 1
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490516424845 1 x  x  x
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490516424867 1 N  o
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490516424889 1 2
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490516424911 1 4
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490516424933 1 Y  E  S
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490516424956 1 5
+2017-03-26 09:20:24 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490516424978 1 2
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490516425000 1 4
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490516425022 1 1
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490516425045 1 x  x  x
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490516425067 1 2
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Created Referendum :4cb60af2-6b10-4f6a-992e-50af0651b8dd Type: simple
+2017-03-26 09:20:25 [pool-1-thread-1] INFO :: Created referendum : 4cb60af2-6b10-4f6a-992e-50af0651b8dd
+2017-03-26 09:20:25 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 09:20:25 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 09:42:58 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 09:42:58 [pool-1-thread-1] INFO :: Setting up :5831e485-f3cd-45b3-a0eb-5f291c0b4a57
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490517779054 1 3
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490517779120 1 4
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490517779142 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490517779164 1 y  e  s
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490517779186 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490517779208 1 N
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490517779231 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490517779264 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490517779286 1 x  x  x
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490517779308 1 Y  E  S
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490517779331 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490517779353 1 Y  E  S
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490517779375 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490517779397 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490517779420 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490517779442 1 Y  E  S
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490517779464 1 3
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490517779486 1 n  o
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490517779508 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490517779531 1 5
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490517779553 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490517779575 1 x  x  x
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490517779597 1 n  o
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490517779620 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490517779642 1 Y  e  s
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490517779664 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490517779686 1 4
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490517779708 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490517779731 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490517779753 1 y  e  s
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490517779775 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490517779797 1 2
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490517779820 1 5
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490517779842 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490517779864 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490517779886 1 3
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490517779908 1 5
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490517779931 1 4
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490517779953 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490517779975 1 1
+2017-03-26 09:42:59 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490517779997 1 2
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490517780020 1 x  x  x
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490517780042 1 3
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490517780064 1 4
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490517780086 1 1
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490517780108 1 n  o
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490517780131 1 N  O
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490517780153 1 2
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490517780175 1 1
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490517780197 1 N  O
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Created Referendum :5831e485-f3cd-45b3-a0eb-5f291c0b4a57 Type: simple
+2017-03-26 09:43:00 [pool-1-thread-1] INFO :: Created referendum : 5831e485-f3cd-45b3-a0eb-5f291c0b4a57
+2017-03-26 09:43:00 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 09:43:00 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 09:43:33 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 09:43:33 [pool-1-thread-1] INFO :: Setting up :04579e07-f29d-44d0-b631-eb0d1df027dc
+2017-03-26 09:43:33 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490517813973 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490517814016 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490517814038 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490517814060 1 3
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490517814083 1 2
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490517814105 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490517814127 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490517814160 1 Y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490517814183 1 5
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490517814205 1 4
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490517814227 1 4
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490517814249 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490517814277 1 x  x  x
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490517814294 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490517814316 1 5
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490517814338 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490517814360 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490517814383 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490517814405 1 3
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490517814427 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490517814449 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490517814472 1 Y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490517814494 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490517814516 1 y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490517814538 1 4
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490517814560 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490517814583 1 Y  E  S
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490517814605 1 2
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490517814627 1 y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490517814649 1 5
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490517814671 1 Y  E  S
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490517814694 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490517814716 1 4
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490517814738 1 y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490517814760 1 2
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490517814783 1 Y
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490517814805 1 2
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490517814827 1 3
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490517814849 1 x  x  x
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490517814871 1 4
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490517814894 1 Y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490517814916 1 x  x  x
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490517814938 1 1
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490517814960 1 y  e  s
+2017-03-26 09:43:34 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490517814983 1 1
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490517815005 1 1
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490517815027 1 N  o
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490517815049 1 3
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490517815071 1 Y  e  s
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490517815094 1 2
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Created Referendum :04579e07-f29d-44d0-b631-eb0d1df027dc Type: simple
+2017-03-26 09:43:35 [pool-1-thread-1] INFO :: Created referendum : 04579e07-f29d-44d0-b631-eb0d1df027dc
+2017-03-26 09:43:35 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 09:43:35 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Setting up :a6627954-4401-4413-8f2b-f7e1f715bd0c
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490517971438 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490517971503 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490517971514 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490517971525 1 x  x  x
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490517971536 1 5
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490517971547 1 n  o
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490517971558 1 x  x  x
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490517971570 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490517971581 1 x  x  x
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490517971592 1 x  x  x
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490517971603 1 3
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490517971614 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490517971625 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490517971636 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490517971647 1 4
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490517971658 1 Y
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490517971670 1 y  e  s
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490517971681 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490517971692 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490517971703 1 4
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490517971714 1 N
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490517971725 1 4
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490517971736 1 N
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490517971747 1 Y  E  S
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490517971758 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490517971770 1 4
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490517971785 1 N
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490517971803 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490517971814 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490517971825 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490517971836 1 5
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490517971847 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490517971858 1 y  e  s
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490517971870 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490517971881 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490517971892 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490517971903 1 N
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490517971914 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490517971925 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490517971936 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490517971947 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490517971958 1 1
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490517971970 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490517971981 1 2
+2017-03-26 09:46:11 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490517971992 1 N  o
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490517972003 1 1
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490517972014 1 1
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490517972025 1 Y  E  S
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490517972036 1 4
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490517972047 1 2
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Created Referendum :a6627954-4401-4413-8f2b-f7e1f715bd0c Type: simple
+2017-03-26 09:46:12 [pool-1-thread-1] INFO :: Created referendum : a6627954-4401-4413-8f2b-f7e1f715bd0c
+2017-03-26 09:46:12 [pool-1-thread-1] ERROR:: For input string: "x"
+2017-03-26 09:46:12 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "x"
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Setting up :054875a9-aa78-4203-9caa-65dd6db2eb48
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490518053859 1 1
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490518053924 1 N
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490518053946 1 Y
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490518053968 1 3
+2017-03-26 09:47:33 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490518053990 1 5
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490518054012 1 Y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490518054035 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490518054057 1 3
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490518054079 1 N  o
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490518054101 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490518054124 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490518054146 1 N  o
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490518054168 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490518054190 1 x  x  x
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490518054212 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490518054235 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490518054257 1 5
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490518054279 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490518054301 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490518054324 1 Y  E  S
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490518054346 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490518054368 1 Y  E  S
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490518054390 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490518054413 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490518054435 1 3
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490518054457 1 y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490518054479 1 n  o
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490518054501 1 Y  E  S
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490518054524 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490518054546 1 N
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490518054568 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490518054590 1 1
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490518054612 1 y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490518054635 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490518054657 1 3
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490518054679 1 y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490518054735 1 x  x  x
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490518054779 1 x  x  x
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490518054824 1 Y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490518054846 1 n  o
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490518054868 1 Y  e  s
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490518054899 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490518054924 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490518054946 1 3
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490518054968 1 2
+2017-03-26 09:47:34 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490518054990 1 y  e  s
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490518055012 1 1
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490518055035 1 4
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490518055057 1 3
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490518055079 1 5
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Created Referendum :054875a9-aa78-4203-9caa-65dd6db2eb48 Type: simple
+2017-03-26 09:47:35 [pool-1-thread-1] INFO :: Created referendum : 054875a9-aa78-4203-9caa-65dd6db2eb48
+2017-03-26 09:47:50 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 09:47:50 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Setting up :86d3b99d-cf6b-4061-a008-89b02cf0e346
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490518879563 1 4
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490518879639 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490518879650 1 3
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490518879661 1 5
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490518879672 1 Y
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490518879683 1 2
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490518879695 1 5
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490518879706 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490518879717 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490518879728 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490518879739 1 3
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490518879750 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490518879761 1 2
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490518879772 1 Y
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490518879783 1 5
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490518879795 1 2
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490518879806 1 2
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490518879817 1 4
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490518879828 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490518879839 1 Y
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490518879850 1 y  e  s
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490518879861 1 Y
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490518879872 1 n  o
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490518879883 1 x  x  x
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490518879895 1 3
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490518879917 1 N  O
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490518879928 1 1
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490518879939 1 n  o
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490518879950 1 3
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490518879962 1 n  o
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490518879972 1 N
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490518879983 1 3
+2017-03-26 10:01:19 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490518879995 1 Y  e  s
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490518880006 1 2
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490518880017 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490518880028 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490518880039 1 4
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490518880050 1 x  x  x
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490518880061 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490518880072 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490518880083 1 3
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490518880095 1 N  O
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490518880106 1 2
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490518880117 1 2
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490518880128 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490518880139 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490518880150 1 1
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490518880161 1 3
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490518880172 1 2
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490518880183 1 Y  E  S
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Created Referendum :86d3b99d-cf6b-4061-a008-89b02cf0e346 Type: simple
+2017-03-26 10:01:20 [pool-1-thread-1] INFO :: Created referendum : 86d3b99d-cf6b-4061-a008-89b02cf0e346
+2017-03-26 10:01:40 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:01:40 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Setting up :008a2edb-baa6-4601-947e-468732c32df2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519387275 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519387339 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519387362 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519387384 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519387406 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519387428 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519387451 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519387473 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519387495 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519387517 1 Y  E  S
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519387539 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519387562 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519387584 1 N  O
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519387606 1 Y
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519387628 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519387651 1 N  O
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519387673 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519387695 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519387717 1 3
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519387795 1 2
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519387887 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519387939 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519387962 1 1
+2017-03-26 10:09:47 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519387984 1 Y
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519388006 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519388028 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519388051 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519388073 1 N
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519388095 1 Y
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519388117 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519388139 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519388162 1 Y
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519388184 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519388206 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519388228 1 N  O
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519388251 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519388273 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519388295 1 Y  E  S
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519388319 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519388339 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519388362 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519388384 1 n  o
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519388406 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519388428 1 n  o
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519388451 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519388473 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519388495 1 2
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519388517 1 1
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519388539 1 N
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519388562 1 3
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Created Referendum :008a2edb-baa6-4601-947e-468732c32df2 Type: simple
+2017-03-26 10:09:48 [pool-1-thread-1] INFO :: Created referendum : 008a2edb-baa6-4601-947e-468732c32df2
+2017-03-26 10:09:48 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:09:48 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:09:48 [pool-1-thread-1] ERROR:: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Setting up :3c693397-5975-4f93-b35b-0877ec4e21c9
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519589384 1 y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519589461 1 N  o
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519589483 1 Y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519589505 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519589527 1 1
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519589550 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519589572 1 1
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519589594 1 N
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519589616 1 1
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519589638 1 y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519589661 1 y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519589683 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519589705 1 n  o
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519589727 1 1
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519589750 1 y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519589772 1 Y  e  s
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519589794 1 2
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519589816 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519589838 1 4
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519589861 1 4
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519589883 1 2
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519589905 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519589927 1 N
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519589950 1 1
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519589972 1 3
+2017-03-26 10:13:09 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519589994 1 n  o
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519590016 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519590038 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519590061 1 4
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519590083 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519590105 1 Y
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519590127 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519590150 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519590172 1 N  o
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519590194 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519590216 1 N  o
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519590238 1 Y
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519590261 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519590283 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519590305 1 Y
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519590327 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519590350 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519590372 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519590394 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519590416 1 Y  e  s
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519590438 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519590461 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519590483 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519590505 1 1
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519590527 1 2
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Created Referendum :3c693397-5975-4f93-b35b-0877ec4e21c9 Type: simple
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Created referendum : 3c693397-5975-4f93-b35b-0877ec4e21c9
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 10:13:10 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:10 [pool-1-thread-1] INFO :: Completed referendum : 3c693397-5975-4f93-b35b-0877ec4e21c9
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Setting up :50f27b44-38a1-4dcd-8a26-e6eb53a1e7c4
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519616813 1 x  x  x
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519616889 1 y  e  s
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519616911 1 2
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519616934 1 4
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519616956 1 1
+2017-03-26 10:13:36 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519616978 1 4
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519617000 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519617023 1 n  o
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519617045 1 n  o
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519617067 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519617089 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519617111 1 N  O
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519617134 1 4
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519617156 1 Y  E  S
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519617178 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519617200 1 n  o
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519617222 1 Y  e  s
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519617245 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519617267 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519617289 1 3
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519617311 1 N
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519617334 1 4
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519617356 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519617378 1 N  O
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519617400 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519617422 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519617445 1 3
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519617467 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519617489 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519617511 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519617534 1 N  o
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519617556 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519617578 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519617600 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519617622 1 Y
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519617645 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519617667 1 N  O
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519617689 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519617711 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519617734 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519617756 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519617778 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519617800 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519617822 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519617845 1 1
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519617867 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519617889 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519617911 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519617934 1 2
+2017-03-26 10:13:37 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519617956 1 Y  E  S
+2017-03-26 10:13:38 [pool-1-thread-1] INFO :: Created Referendum :50f27b44-38a1-4dcd-8a26-e6eb53a1e7c4 Type: simple
+2017-03-26 10:13:38 [pool-1-thread-1] INFO :: Created referendum : 50f27b44-38a1-4dcd-8a26-e6eb53a1e7c4
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "x"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "y"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "N"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "Y"
+2017-03-26 10:13:38 [pool-1-thread-1] ERROR:: For input string: "n"
+2017-03-26 10:13:38 [pool-1-thread-1] INFO :: Completed referendum : 50f27b44-38a1-4dcd-8a26-e6eb53a1e7c4
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Setting up :38b146a1-45f3-4ce5-bdd3-fdb630dcf26e
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519736483 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519736547 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519736569 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519736591 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519736613 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519736636 1 N  O
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519736658 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519736680 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519736702 1 3
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519736725 1 3
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519736747 1 x  x  x
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519736769 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519736791 1 N
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519736813 1 n  o
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519736836 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519736864 1 y  e  s
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519736881 1 y  e  s
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519736902 1 4
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519736925 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519736947 1 1
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519736969 1 2
+2017-03-26 10:15:36 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519736991 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519737013 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519737036 1 x  x  x
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519737058 1 3
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519737080 1 4
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519737102 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519737125 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519737158 1 Y
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519737180 1 5
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519737202 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519737225 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519737247 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519737269 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519737291 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519737313 1 Y  e  s
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519737336 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519737358 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519737380 1 Y  E  S
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519737402 1 x  x  x
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519737425 1 x  x  x
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519737447 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519737469 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519737491 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519737513 1 2
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519737536 1 3
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519737558 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519737580 1 4
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519737602 1 1
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519737625 1 Y  e  s
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Created Referendum :38b146a1-45f3-4ce5-bdd3-fdb630dcf26e Type: simple
+2017-03-26 10:15:37 [pool-1-thread-1] INFO :: Created referendum : 38b146a1-45f3-4ce5-bdd3-fdb630dcf26e
+2017-03-26 10:15:37 [pool-1-thread-1] ERROR:: 
+2017-03-26 10:15:37 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Setting up :71bf582c-a912-4581-aa88-99993f2f56e8
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519830150 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519830215 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519830238 1 N  O
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519830260 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519830282 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519830304 1 2
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519830326 1 3
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519830349 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519830371 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519830393 1 5
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519830415 1 4
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519830438 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519830460 1 y  e  s
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519830482 1 x  x  x
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519830504 1 4
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519830526 1 N
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519830549 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519830571 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519830593 1 2
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519830615 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519830638 1 2
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519830660 1 Y  e  s
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519830682 1 3
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519830704 1 Y  e  s
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519830727 1 5
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519830749 1 Y
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519830771 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519830793 1 3
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519830815 1 n  o
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519830838 1 5
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519830860 1 n  o
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519830882 1 3
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519830904 1 5
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519830926 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519830949 1 1
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519830971 1 2
+2017-03-26 10:17:10 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519830993 1 2
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519831015 1 3
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519831038 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519831060 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519831082 1 4
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519831104 1 Y
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519831126 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519831149 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519831171 1 4
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519831193 1 N  o
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519831215 1 x  x  x
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519831238 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519831260 1 2
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519831360 1 1
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Created Referendum :71bf582c-a912-4581-aa88-99993f2f56e8 Type: simple
+2017-03-26 10:17:11 [pool-1-thread-1] INFO :: Created referendum : 71bf582c-a912-4581-aa88-99993f2f56e8
+2017-03-26 10:17:11 [pool-1-thread-1] ERROR:: 
+2017-03-26 10:17:11 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Setting up :8cbda72d-6c0a-4472-84b0-9c411657ef12
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490519873274 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490519873416 1 N  O
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490519873460 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490519873471 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490519873482 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490519873493 1 4
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490519873504 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490519873515 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490519873527 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490519873538 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490519873549 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490519873560 1 N
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490519873571 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490519873582 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490519873593 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490519873604 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490519873615 1 N  O
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490519873627 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490519873638 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490519873649 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490519873660 1 Y
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490519873671 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490519873682 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490519873693 1 n  o
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490519873704 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490519873715 1 N  O
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490519873727 1 N  o
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490519873738 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490519873749 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490519873760 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490519873771 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490519873782 1 N  O
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490519873793 1 4
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490519873804 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490519873815 1 4
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490519873827 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490519873838 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490519873849 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490519873860 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490519873871 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490519873882 1 n  o
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490519873893 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490519873904 1 1
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490519873915 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490519873926 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490519873938 1 2
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490519873949 1 Y  E  S
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490519873960 1 5
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490519873971 1 3
+2017-03-26 10:17:53 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490519873982 1 2
+2017-03-26 10:17:54 [pool-1-thread-1] INFO :: Created Referendum :8cbda72d-6c0a-4472-84b0-9c411657ef12 Type: simple
+2017-03-26 10:17:54 [pool-1-thread-1] INFO :: Created referendum : 8cbda72d-6c0a-4472-84b0-9c411657ef12
+2017-03-26 10:17:54 [pool-1-thread-1] ERROR:: 
+2017-03-26 10:17:54 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Setting up :e291595d-a668-4b78-a65a-e0fbe7bc2b19
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520003660 1 1
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520003725 1 5
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520003747 1 2
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520003769 1 1
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520003792 1 2
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520003813 1 1
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520003836 1 y  e  s
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520003858 1 x  x  x
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520003880 1 1
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520003902 1 Y
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520003925 1 1
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520003947 1 2
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520003969 1 x  x  x
+2017-03-26 10:20:03 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520003992 1 4
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520004013 1 n  o
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520004036 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520004058 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520004080 1 Y
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520004102 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520004125 1 n  o
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520004147 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520004169 1 N  o
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520004191 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520004213 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520004236 1 x  x  x
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520004258 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520004280 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520004302 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520004357 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520004391 1 y  e  s
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520004414 1 Y
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520004436 1 Y  e  s
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520004458 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520004480 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520004502 1 x  x  x
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520004525 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520004547 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520004569 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520004591 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520004613 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520004636 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520004658 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520004680 1 2
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520004702 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520004725 1 n  o
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520004747 1 N  o
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520004769 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520004792 1 3
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520004814 1 1
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520004836 1 Y
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Created Referendum :e291595d-a668-4b78-a65a-e0fbe7bc2b19 Type: simple
+2017-03-26 10:20:04 [pool-1-thread-1] INFO :: Created referendum : e291595d-a668-4b78-a65a-e0fbe7bc2b19
+2017-03-26 10:20:18 [pool-1-thread-1] ERROR:: 
+2017-03-26 10:20:18 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Setting up :ead5cb52-bba7-4200-946f-b6eecfe982b8
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520121125 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520121201 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520121222 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520121244 1 2
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520121266 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520121288 1 Y
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520121311 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520121333 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520121355 1 Y  E  S
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520121377 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520121400 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520121422 1 N  o
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520121444 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520121466 1 n  o
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520121489 1 Y
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520121511 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520121533 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520121555 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520121577 1 N
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520121600 1 2
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520121622 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520121644 1 Y
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520121666 1 4
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520121688 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520121711 1 N  O
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520121733 1 Y  e  s
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520121755 1 2
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520121777 1 5
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520121800 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520121822 1 3
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520121844 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520121866 1 2
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520121888 1 n  o
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520121911 1 1
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520121933 1 N  O
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520121955 1 2
+2017-03-26 10:22:01 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520121977 1 n  o
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520122000 1 1
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520122022 1 1
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520122044 1 1
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520122066 1 1
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520122088 1 n  o
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520122111 1 2
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520122133 1 4
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520122155 1 n  o
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520122177 1 3
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520122200 1 N
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520122222 1 2
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520122244 1 2
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520122266 1 1
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Created Referendum :ead5cb52-bba7-4200-946f-b6eecfe982b8 Type: simple
+2017-03-26 10:22:02 [pool-1-thread-1] INFO :: Created referendum : ead5cb52-bba7-4200-946f-b6eecfe982b8
+2017-03-26 10:23:40 [pool-1-thread-1] ERROR:: 
+2017-03-26 10:23:40 [pool-1-thread-1] ERROR:: java.lang.NullPointerException
+2017-03-26 10:23:43 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:23:43 [pool-1-thread-1] INFO :: Setting up :ce5ebef5-cfec-49ae-b5c8-63ee8c6ae1f7
+2017-03-26 10:23:43 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520223985 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520224049 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520224071 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520224093 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520224116 1 n  o
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520224138 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520224160 1 x  x  x
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520224182 1 x  x  x
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520224205 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520224227 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520224249 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520224271 1 N
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520224293 1 N
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520224316 1 x  x  x
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520224338 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520224360 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520224382 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520224405 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520224427 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520224449 1 3
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520224471 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520224493 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520224518 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520224538 1 4
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520224560 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520224582 1 N  o
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520224605 1 3
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520224627 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520224649 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520224671 1 5
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520224693 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520224716 1 4
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520224738 1 3
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520224760 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520224782 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520224805 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520224827 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520224849 1 1
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520224871 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520224893 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520224916 1 x  x  x
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520224938 1 4
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520224960 1 2
+2017-03-26 10:23:44 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520224982 1 1
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520225005 1 1
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520225027 1 n  o
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520225049 1 n  o
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520225071 1 3
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520225093 1 Y  e  s
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520225116 1 2
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Created Referendum :ce5ebef5-cfec-49ae-b5c8-63ee8c6ae1f7 Type: simple
+2017-03-26 10:23:45 [pool-1-thread-1] INFO :: Created referendum : ce5ebef5-cfec-49ae-b5c8-63ee8c6ae1f7
+2017-03-26 10:24:18 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:18 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "x"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "x"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "x"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "x"
+2017-03-26 10:24:49 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:49 [pool-1-thread-1] INFO :: Completed referendum : ce5ebef5-cfec-49ae-b5c8-63ee8c6ae1f7
+2017-03-26 10:24:57 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:24:57 [pool-1-thread-1] INFO :: Setting up :c674ae86-f57b-4c4b-ba2b-29f3b0b5a99a
+2017-03-26 10:24:57 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520297923 1 1
+2017-03-26 10:24:57 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520297988 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520297999 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520298010 1 n  o
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520298022 1 N  O
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520298032 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520298044 1 N  O
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520298055 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520298066 1 N  O
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520298077 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520298088 1 N
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520298099 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520298110 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520298121 1 5
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520298132 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520298144 1 y  e  s
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520298155 1 N
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520298166 1 4
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520298177 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520298188 1 4
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520298199 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520298210 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520298221 1 y  e  s
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520298232 1 4
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520298244 1 Y
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520298255 1 Y  E  S
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520298266 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520298277 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520298288 1 n  o
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520298299 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520298310 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520298321 1 Y  E  S
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520298332 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520298344 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520298355 1 N  o
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520298366 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520298377 1 3
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520298388 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520298399 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520298410 1 N  o
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520298421 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520298432 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520298444 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520298455 1 n  o
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520298466 1 2
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520298477 1 3
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520298488 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520298499 1 4
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520298510 1 1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520298521 1 N  O
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Created Referendum :c674ae86-f57b-4c4b-ba2b-29f3b0b5a99a Type: simple
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Created referendum : c674ae86-f57b-4c4b-ba2b-29f3b0b5a99a
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:24:58 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:24:58 [pool-1-thread-1] INFO :: Completed referendum : c674ae86-f57b-4c4b-ba2b-29f3b0b5a99a
+2017-03-26 10:25:33 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:25:33 [pool-1-thread-1] INFO :: Setting up :c59dfd94-f27d-4861-b4d3-deef5b7fde75
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520334025 1 2
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520334090 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520334112 1 n  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520334135 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520334157 1 5
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520334179 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520334204 1 n  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520334223 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520334246 1 2
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520334268 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520334290 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520334312 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520334335 1 4
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520334357 1 3
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520334379 1 y  e  s
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520334401 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520334423 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520334446 1 2
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520334468 1 4
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520334490 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520334512 1 3
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520334535 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520334557 1 y  e  s
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520334579 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520334601 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520334623 1 N  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520334646 1 4
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520334668 1 4
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520334690 1 Y  e  s
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520334713 1 3
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520334735 1 y  e  s
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520334757 1 4
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520334779 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520334801 1 n  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520334823 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520334846 1 y  e  s
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520334868 1 n  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520334890 1 2
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520334913 1 1
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520334935 1 Y  E  S
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520334957 1 N  o
+2017-03-26 10:25:34 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520334979 1 N  O
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520335001 1 1
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520335024 1 5
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520335046 1 1
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520335068 1 n  o
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520335090 1 n  o
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520335113 1 N
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520335135 1 Y  e  s
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520335157 1 2
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Created Referendum :c59dfd94-f27d-4861-b4d3-deef5b7fde75 Type: simple
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Created referendum : c59dfd94-f27d-4861-b4d3-deef5b7fde75
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "y"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:25:35 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:25:35 [pool-1-thread-1] INFO :: Completed referendum : c59dfd94-f27d-4861-b4d3-deef5b7fde75
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Collector type: Test
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Setting up :ec781b91-73ea-4704-b833-49b84ede517c
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0001 4991 1490520539065 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0002 3165 1490520539130 1 n  o
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0003 6544 1490520539152 1 Y  E  S
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0004 8472 1490520539174 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0005 4296 1490520539196 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0006 2580 1490520539219 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0007 6434 1490520539241 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0008 9757 1490520539263 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0009 7127 1490520539285 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0010 1408 1490520539308 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0011 3418 1490520539330 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0012 9362 1490520539352 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0013 3051 1490520539374 1 Y  E  S
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0014 2397 1490520539396 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0015 4455 1490520539419 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0016 7091 1490520539441 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0017 4991 1490520539463 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0018 9202 1490520539485 1 n  o
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0019 8016 1490520539508 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0020 3525 1490520539530 1 N
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0021 7687 1490520539552 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0022 9393 1490520539574 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0023 1974 1490520539596 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0024 3878 1490520539619 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0025 8914 1490520539641 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0026 2386 1490520539663 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0027 5692 1490520539685 1 Y
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0028 6387 1490520539708 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0029 3583 1490520539730 1 3
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0030 6031 1490520539752 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0031 3981 1490520539774 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0032 5601 1490520539796 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0033 8092 1490520539819 1 N  O
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0034 4756 1490520539841 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0035 7528 1490520539863 1 2
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0036 1084 1490520539885 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0037 7102 1490520539908 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0038 2195 1490520539930 1 Y  E  S
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0039 2041 1490520539952 1 n  o
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0040 9214 1490520539974 1 1
+2017-03-26 10:28:59 [pool-1-thread-1] INFO :: Added vote:  0041 3864 1490520539996 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0042 3848 1490520540019 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0043 7949 1490520540041 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0044 8553 1490520540063 1 3
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0045 7193 1490520540085 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0046 3919 1490520540108 1 2
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0047 1347 1490520540130 1 3
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0048 2356 1490520540152 1 4
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0049 4626 1490520540174 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Added vote:  0050 5631 1490520540196 1 1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Created Referendum :ec781b91-73ea-4704-b833-49b84ede517c Type: simple
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Created referendum : ec781b91-73ea-4704-b833-49b84ede517c
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "N"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "n"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: java.lang.NumberFormatException: For input string: "Y"
+2017-03-26 10:29:00 [pool-1-thread-1] WARN :: VC :-1
+2017-03-26 10:29:00 [pool-1-thread-1] INFO :: Completed referendum : ec781b91-73ea-4704-b833-49b84ede517c

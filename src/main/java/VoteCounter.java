@@ -69,26 +69,34 @@ public class VoteCounter {
         ballotCount.put("3",0);
         ballotCount.put("4",0);
         ballotCount.put(badVote, 0);
+        Integer check;
         for(String key : voteMap.getKeys()){
             String[] parts = voteMap.get(key).split(" ");
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
-            System.out.println("results" + vote.ballotToString());
             System.out.println(validateVoteOptions(vote)); //todo votecollector fix for longer options
             publishResults(parts[0], parts[4]);
             for(String  opt : vote.getBallot()) {
 
                 //todo check for yes, no, or custom options and invalid options
                 // todo
+                try {
+                     check = new Integer(opt);
+                }
+                catch (Exception e){
+                    check = -1;
+                    LOGGER.warn(e.toString());
+                }
 
 
 
-                if ( Integer.parseInt(opt)>0  && (Integer.parseInt(opt) <5)) {
-                    Integer i = ballotCount.get(opt);
-                    //System.out.println(" putting " + opt  + ": " + String.valueOf(i+1));
-                    ballotCount.put(opt, i + 1);
+
+                if (!(check >0 && check <5)) {
+                    ballotCount.put(badVote, ballotCount.get(badVote)+1 );
 
                 }else{
-                    ballotCount.put(badVote, ballotCount.get(badVote)+1 );
+                    Integer i = ballotCount.get(check.toString());
+                    System.out.println(" putting " + opt  + " check: " + check + ": " + String.valueOf(i+1));
+                    ballotCount.put(check.toString(), i + 1);
                 }
             }
         }
