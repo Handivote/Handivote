@@ -73,13 +73,13 @@ public class VoteRecorder {
                 vote.setValid(false);
                 vote.setPinVerification(true);
                 map.put(vote.getVoterID(), vote.toString());
-                LOGGER.warn(" Recorded bad vote : " + vote.toString()+ " ");
+                LOGGER.warn(" Recorded bad vote : " + vote.toString()+ " @" + System.currentTimeMillis());
 
             }
 
         }
         map.put(vote.getVoterID(), vote.toString());
-        LOGGER.info("Added vote:  " + vote.toString());
+        LOGGER.info("Added vote:  " + vote.toString() + " @" + System.currentTimeMillis() );
         db.commit();
 
         return true;

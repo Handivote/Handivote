@@ -29,7 +29,7 @@ public class ReferendumManager {
             public void run() {
                 try {
                     referendum = rf.buildReferendum(properties);
-                    LOGGER.info("Created referendum : " + referendum.getRefID().toString());
+                    LOGGER.info("Created referendum : " + referendum.getRefID().toString()+ " @" + System.currentTimeMillis());
                 } catch (Exception e) {
                     LOGGER.error(e.getMessage());
                     LOGGER.error(e.toString());
@@ -46,7 +46,7 @@ public class ReferendumManager {
                 try {
                     referendum.publishResults(referendum.getRefID());
                     refHandle.cancel(true);
-                    LOGGER.info("Completed referendum : " + referendum.getRefID().toString());
+                    LOGGER.info("Completed referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
                 } catch (Exception e) {
                     LOGGER.error(e.getMessage());
                     LOGGER.error(e.toString());

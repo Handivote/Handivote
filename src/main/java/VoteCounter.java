@@ -73,7 +73,7 @@ public class VoteCounter {
         for(String key : voteMap.getKeys()){
             String[] parts = voteMap.get(key).split(" ");
             Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
-            System.out.println(validateVoteOptions(vote)); //todo votecollector fix for longer options
+            //System.out.println(validateVoteOptions(vote)); //todo votecollector fix for longer options
             publishResults(parts[0], parts[4]);
             for(String  opt : vote.getBallot()) {
 
@@ -86,10 +86,6 @@ public class VoteCounter {
                     check = -1;
                     LOGGER.warn(e.toString());
                 }
-
-
-
-
                 if (!(check >0 && check <5)) {
                     ballotCount.put(badVote, ballotCount.get(badVote)+1 );
 
@@ -111,6 +107,7 @@ public class VoteCounter {
     @NotNull
     private HTreeMap<String, String> getVoteStore() {
         voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
+        LOGGER.info("Opened " + refID + " @" + System.currentTimeMillis());
         return voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
     }
 
@@ -118,19 +115,19 @@ public class VoteCounter {
 
         switch (ballot){
             case "1":
-                option1.add(voterID+ " : " + ballot);
+                option1.add(voterID);
                 break;
             case "2":
-                option2.add(voterID + " : " + ballot);
+                option2.add(voterID);
                 break;
             case "3":
-                option3.add(voterID + " : " + ballot);
+                option3.add(voterID);
                 break;
             case "4":
-                option4.add(voterID + " : " + ballot);
+                option4.add(voterID);
                 break;
             default:
-                badVotes.add(voterID + " : " + ballot);
+                badVotes.add(voterID);
                 break;
         }
 

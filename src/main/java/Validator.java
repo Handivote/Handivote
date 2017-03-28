@@ -48,7 +48,7 @@ public class Validator {
                     //System.out.println(vote.toJSONString() + " validated");
                 } else {
                     vote.setValid(false);
-                    System.out.println(vote.toJSONString() + " \n processed bad vote");
+                    LOGGER.warn(vote.toJSONString() + " \n processed bad vote at: " + System.currentTimeMillis());
                 }
                 vote.setPinVerification(true);
                 voteMap.put(vote.getVoterID(), vote.toString());
