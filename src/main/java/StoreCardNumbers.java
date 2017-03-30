@@ -23,19 +23,22 @@ class StoreCardNumbers {
     public StoreCardNumbers(UUID refID, String numbersFile) throws IOException {
         this.refID = refID;
         this.db = setupDB(refID);
-        String numFile = numbersFile;
-        readFromFile(numFile);
+        readFromFile(numbersFile);
+        mapCardNumbers();
     }
 
     StoreCardNumbers(UUID refID, ArrayList numsList) {
         this.refID = refID;
         this.db = setupDB(refID);
         this.numsList = numsList;
+        mapCardNumbers();
 
 
     }
     private DB setupDB(UUID refId){
-        db = DBMaker.fileDB(refId + ".register").fileMmapEnable().make();
+        db = DBMaker.fileDB(refId + ".register")
+                .fileMmapEnable()
+                .make();
         return db;
     }
     void readFromFile(String numFile) throws IOException {
@@ -60,13 +63,17 @@ class StoreCardNumbers {
 
     }
 
-    void storeCardNumbers(){
-        HTreeMap<String, String> map = db.hashMap("numsMap", Serializer.STRING, Serializer.STRING).createOrOpen();
+    void mapCardNumbers(){
+        HTreeMap<String, String> map = db
+                .hashMap("numsMap")
+                .keySerializer(Serializer.STRING)
+                .valueSerializer(Serializer.STRING)
+                .createOrOpen();
+
         for (int i=0; i<numsList.size(); i++){
             String str = (String) numsList.get(i);
             String [] parts = str.split(" ");
             map.put(parts[0], parts[1]);
-            //System.out.println("added " +numsList.get(i));
         }
         db.commit();
         db.close();

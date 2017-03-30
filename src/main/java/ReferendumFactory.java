@@ -1,7 +1,7 @@
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.UUID;
@@ -26,9 +26,6 @@ public class ReferendumFactory {
             case "Test":
                 voteCollector = new SimpleTestCollector(questions);
                 break;
-            case "MultiTest":
-                voteCollector = new MultiTestCollector(numberOfQuestions, questions);
-                break;
             default:
                 IllegalArgumentException exception = new IllegalArgumentException("Invalid Collector type: " + voteCollectorType);
                 LOGGER.error(exception.getMessage(), exception);
@@ -41,11 +38,13 @@ public class ReferendumFactory {
     Referendum buildReferendum(Properties properties) {
         UUID refID = UUID.randomUUID();
         int numberOfCards = Integer.parseInt(properties.getProperty("numberOfCards"));
+        String numFile = properties.getProperty("numsFile");
+        System.out.println(numFile);
         int pinDigits = Integer.parseInt(properties.getProperty("digits"));
         String password1 = properties.getProperty("password1");
         String password2 = properties.getProperty("password2");
         // load card numbers
-        registerVoters(refID, numberOfCards, pinDigits, password1, password2);
+        registerVoters(refID, numberOfCards, pinDigits, password1, password2, numFile);
 
 
         String refType = properties.getProperty("refType");
@@ -60,11 +59,6 @@ public class ReferendumFactory {
                 referendum = new SimpleReferendum();
                 referendum.createReferendum(refID, questions, voteCollector);
                 break;
-            case "multi":
-                referendum = new MultiQuestionReferendum();
-                referendum.createReferendum(refID, questions, voteCollector);
-                break;
-
             default:
                 throw new IllegalArgumentException("Invalid Referendum type: " + refType);
 
@@ -73,7 +67,7 @@ public class ReferendumFactory {
         return referendum;
     }
 
-    @NotNull
+
     private ArrayList<Question> loadQuestions(Properties properties) {
         ArrayList<Question> questions = new ArrayList<Question>();
         for (int i = 0; i < new Integer(properties.getProperty("numberOfQuestions")); i++) {
@@ -90,17 +84,21 @@ public class ReferendumFactory {
         return questions;
     }
 
-    private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2) {
+    private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2, String numFile) {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
-        StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
+        //StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
         //todo load nums from file
-        //StoreCardNumbers scn = null;
-        // try {
-        //     scn = new StoreCardNumbers(refID, "/src/main/resources/emailnums.text");
-        // } catch (IOException e) {
-        //     e.printStackTrace();
-        // }
-        scn.storeCardNumbers();
+        StoreCardNumbers scn = null;
+        if(!numFile.equals("")){
+            try {
+                scn = new StoreCardNumbers(refID, numFile);
+            } catch (IOException e) {
+                LOGGER.error(e.getMessage());
+            }
+        }
+        else {
+            scn = new StoreCardNumbers(refID, gcn.getNumsList());
+        }
     }
 
 }

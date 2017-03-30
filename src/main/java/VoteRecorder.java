@@ -10,11 +10,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.UUID;
 
-public class VoteRecorder {
+public class VoteRecorder implements Runnable {
     private UUID refID;
     private DB db;
     private Vote vote;
     private ArrayList<Question> questions;
+    public static final Boolean TESTING = true;
     private static Logger LOGGER = LoggerFactory.getLogger(VoteRecorder.class);
 
 
@@ -37,33 +38,32 @@ public class VoteRecorder {
 
     public  DB  setupDB(UUID refId){
         LOGGER.info("Setting up :" + refId.toString());
-        db = DBMaker.fileDB(refId + ".raw").fileMmapEnable().make();
+        db = DBMaker.fileDB(refId + ".raw")
+                .fileMmapEnable()
+                .transactionEnable()
+                .make();
         return db;
     }
-    public void validateVoteOptions(Vote vote){
+    public  void  validateVoteOptions(Vote vote){
         for( Question question  : questions) {
             ArrayList<QuestionOption> qOpt = question.getOptions();
             for (QuestionOption questionOption : qOpt) {
-
                 if((vote.ballotToString().toLowerCase()).equals(questionOption.getOptionString())){
-                    System.out.println(vote.ballotToString().toLowerCase()+" ::: "+ questionOption.getOptionString());
+                    LOGGER.warn("Voter: "+ vote.getVoterID() + ", vote = "  + vote.ballotToString().toLowerCase()
+                            + " matches option:  " + questionOption.getOptionId()
+                            + ": " + questionOption.getOptionString());
                 }
             }
         }
     }
 
-    public boolean recordVote(Vote vote){
+    public  boolean recordVote(Vote vote){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
-        // todo vaildate vote 'yes' ,'no' or user-defined option etc.
-
-
         if (vote.getBallot().length>1){
             validateVoteOptions(vote);
             //String ballot = vote.ballotToString(vote.getBallot());
             //System.out.println("recording: " + ballot);
-
         }
-
         if (map.containsKey(vote.getVoterID())){
             String [] parts = map.get(vote.getVoterID()).split(" ");
             System.out.println("record: " +  parts[4]);
@@ -74,15 +74,16 @@ public class VoteRecorder {
                 vote.setPinVerification(true);
                 map.put(vote.getVoterID(), vote.toString());
                 LOGGER.warn(" Recorded bad vote : " + vote.toString()+ " @" + System.currentTimeMillis());
-
             }
-
         }
         map.put(vote.getVoterID(), vote.toString());
-        LOGGER.info("Added vote:  " + vote.toString() + " @" + System.currentTimeMillis() );
         db.commit();
-
+        LOGGER.debug("Added vote:  " + vote.toString() + " at " + System.currentTimeMillis() );
         return true;
     }
 
+    @Override
+    public void run() {
+
+    }
 }

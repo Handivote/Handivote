@@ -17,6 +17,7 @@ public class SMSCollector implements VoteCollector {
 
     @Override
     public void sendAck(String recipient) {
+        new sendKapowAck(recipient);
 
     }
 }

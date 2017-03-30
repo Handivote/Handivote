@@ -51,6 +51,7 @@ class GenerateCardNumbers
         } catch (IOException e) {
             e.printStackTrace();
         }
+        assert fw != null;
         BufferedWriter bw = new BufferedWriter(fw);
 
         for (String s : numsList) {
@@ -97,7 +98,7 @@ class GenerateCardNumbers
         }
         return h;
     }
-    private static final  long[]createLookupTable() {
+    private static long[]createLookupTable() {
         byteTable = new long[256];
         long h = 0x544B2FBACAAF1684L;
         for (int i = 0; i < 256; i++) {

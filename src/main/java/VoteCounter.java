@@ -30,17 +30,7 @@ public class VoteCounter {
         this.questions = questions;
 
     }
-    public void multiQuestionCalculateResults(ArrayList<Question> questions) {
-        HTreeMap<String, String> voteMap = getVoteStore();
-        HashMap<String,Integer> ballotCount = new HashMap<String,Integer>();
-        for(String key : voteMap.getKeys()) {
-            String[] parts = voteMap.get(key).split(" ");
-            //System.out.println(Arrays.toString(parts));
-            Vote vote = new Vote(parts[0], parts[1], Long.parseLong(parts[2]), parts[3], parts[4].split(" "));
-            //System.out.println(vote.toString());
-        }
 
-    }
     public String validateVoteOptions(Vote vote) {
         String str = vote.ballotToString();
         for (Question question : questions) {
@@ -91,7 +81,7 @@ public class VoteCounter {
 
                 }else{
                     Integer i = ballotCount.get(check.toString());
-                    System.out.println(" putting " + opt  + " check: " + check + ": " + String.valueOf(i+1));
+                    //System.out.println(" putting " + opt  + " check: " + check + ": " + String.valueOf(i+1));
                     ballotCount.put(check.toString(), i + 1);
                 }
             }
@@ -105,7 +95,7 @@ public class VoteCounter {
     }
 
     @NotNull
-    private HTreeMap<String, String> getVoteStore() {
+    private synchronized HTreeMap<String, String> getVoteStore() {
         voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
         LOGGER.info("Opened " + refID + " @" + System.currentTimeMillis());
         return voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
@@ -142,7 +132,7 @@ public class VoteCounter {
             e.printStackTrace();
         }
         BufferedWriter bw = new BufferedWriter(fw);
-
+        LOGGER.info(file.getName() + " : " + voteList.size());
         for (String s : voteList) {
             try {
                 bw.write(s + System.getProperty("line.separator"));

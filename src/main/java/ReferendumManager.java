@@ -4,12 +4,12 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
-
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
@@ -18,51 +18,57 @@ public class ReferendumManager {
     private Referendum referendum;
     private final ScheduledExecutorService scheduler =
             Executors.newScheduledThreadPool(1);
+    private static final Boolean TESTING = true;
 
     public void setSchedule(ReferendumFactory rf, Properties properties, Date startDate, Date endDate) {
-        //todo error handling
+
+        Date today = Calendar.getInstance().getTime();
         long delay = startDate.getTime() - System.currentTimeMillis();
         long endDelay = endDate.getTime() - System.currentTimeMillis();
-        final Runnable ref = new Runnable() {
-
-            @Override
-            public void run() {
-                try {
-                    referendum = rf.buildReferendum(properties);
-                    LOGGER.info("Created referendum : " + referendum.getRefID().toString()+ " @" + System.currentTimeMillis());
-                } catch (Exception e) {
-                    LOGGER.error(e.getMessage());
-                    LOGGER.error(e.toString());
-                    LOGGER.debug(String.valueOf(e.getStackTrace()));
-                    // scheduling lib. silences exceptions
-
-                }
+        if(!TESTING) {
+            if (startDate.compareTo(endDate) > 0 || startDate.compareTo(today) < 0) {
+                LOGGER.error("Invalid Dates --  start date: " + startDate + " end date: " + endDate);
+                System.exit(1);
             }
-        };
-        final ScheduledFuture<?> refHandle = scheduler.schedule(ref, delay, MILLISECONDS);
-        scheduler.schedule(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    referendum.publishResults(referendum.getRefID());
-                    refHandle.cancel(true);
-                    LOGGER.info("Completed referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
-                } catch (Exception e) {
-                    LOGGER.error(e.getMessage());
-                    LOGGER.error(e.toString());
-                    LOGGER.debug(String.valueOf(e.getStackTrace()));
-                } finally {
-                    System.exit(0);
+            final Runnable ref = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        // scheduling lib. silences exceptions
+                        referendum = rf.buildReferendum(properties);
+                        LOGGER.info("Created referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
+                    } catch (Exception e) {
+                        LOGGER.error(e.getMessage());
+                    }
                 }
-
-            }
-        }, endDelay, MILLISECONDS);
-
+            };
+            final ScheduledFuture<?> refHandle = scheduler.schedule(ref, delay, MILLISECONDS);
+            scheduler.schedule(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        // scheduling lib. silences exceptions
+                        refHandle.cancel(false);
+                        referendum.publishResults(referendum.getRefID());
+                        LOGGER.info("Completed referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
+                    } catch (Exception e) {
+                        LOGGER.error(e.getMessage());
+                    } finally {
+                        scheduler.shutdown();
+                    }
+                }
+            }, endDelay, MILLISECONDS);
+        }
+        else{
+            referendum = rf.buildReferendum(properties);
+            LOGGER.info("Created referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
+            referendum.publishResults(referendum.getRefID());
+            LOGGER.info("Completed referendum : " + referendum.getRefID().toString() + " @" + System.currentTimeMillis());
+        }
     }
 
 
     public static void main(String[] args) {
-
         ReferendumManager referendumManager = new ReferendumManager();
         Date startDate = null;
         Date endDate = null;

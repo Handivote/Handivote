@@ -91,11 +91,11 @@ public class Vote {
                 .replace(']', ' ').replace(',', ' ').trim();
     }
     public String ballotToString(){
-        String ballotString = "";
+        StringBuilder ballotString = new StringBuilder();
         for (int i=0; i<ballot.length;i++){
-            ballotString += ballot[i];
+            ballotString.append(ballot[i]);
         }
 
-        return ballotString;
+        return ballotString.toString();
     }
 }
