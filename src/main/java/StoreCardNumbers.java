@@ -42,15 +42,23 @@ class StoreCardNumbers {
         return db;
     }
     void readFromFile(String numFile) throws IOException {
+        String basePath = new File("").getAbsolutePath();
+        System.out.println(basePath);
+
+        String path = new File("emailnums.text")
+                .getAbsolutePath();
+        System.out.println(path);
         numsList = new ArrayList();
-        File file = new File("./" + numFile);
-        FileReader fr = null;
-        fr = new FileReader(file);
+        File file = new File(numFile);
+        System.out.println();
+        FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
         try {
             while (br.readLine() != null) {
+
                 numsList.add(br.readLine());
+
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -154,6 +154,8 @@ public class EmailCollector implements VoteCollector {
         scheduledExecutorService.scheduleAtFixedRate(() -> {
             //The repetitive task, say to update Database
             collectEmails(refID);
+            Validator validator = new Validator(refID, questions);
+            validator.validateVoterPIN();
          }, 0, 2, TimeUnit.MINUTES);
     }
 }

@@ -26,8 +26,8 @@ public class SimpleReferendum implements Referendum {
         this.refID = refID;
         setQuestions(questions);
         collector.collectVotes(refID);
-        Validator validator = new Validator(refID, getQuestions());
-        validator.validateVoterPIN();
+        //Validator validator = new Validator(refID, questions);
+        //validator.validateVoterPIN();
     }
 
     @Override

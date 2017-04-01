@@ -87,7 +87,7 @@ public class ReferendumFactory {
     private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2, String numFile) {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
         //StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
-        //todo load nums from file
+        System.out.println(numFile);
         StoreCardNumbers scn = null;
         if(!numFile.equals("")){
             try {
@@ -101,4 +101,4 @@ public class ReferendumFactory {
         }
     }
 
-}
+}//home/p/Projects/handivote/src/main/resources/emailnums.text
