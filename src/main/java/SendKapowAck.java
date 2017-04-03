@@ -12,25 +12,26 @@ import java.io.InputStream;
 import java.util.Properties;
 
 
-public class sendKapowAck {
-    private static Logger LOGGER = LoggerFactory.getLogger(sendKapowAck.class);
+public class SendKapowAck {
+    private static Logger LOGGER = LoggerFactory.getLogger(SendKapowAck.class);
     private static boolean TESTING = true;
+    Properties secret = PropsLoader.getProperties("secret.properties");
 
-    public sendKapowAck(String recipient) {
+    public SendKapowAck(String recipient) {
         sendTo(recipient);
     }
 
 
     public void sendTo(String recipient) {
         String url = "http://www.kapow.co.uk/scripts/sendsms.php?" +
-                "username=LFC1989&password=NUT1989&mobilBurtons suitse=" + recipient +
+        "username="+ secret.getProperty("kapowUser")+"&password="+ secret.getProperty("kapowPassword") + "&mobile=" + recipient +
                 "&sms=" + "Handivote+thanks+you+for+your+vote";
 
         LOGGER.info(url);
 
         if (TESTING) {
             url = "http://www.kapow.co.uk/scripts/sendsms.php?" +
-                    "username=LFC&password=NUT&mobilBurtons suitse=" + recipient +
+                    "username="+ "kapowUser"+ "kapowPassword" + "&mobile=" + recipient +
                     "&sms=" + "Handivote+thanks+you+for+your+vote";
         }
 
@@ -42,7 +43,10 @@ public class sendKapowAck {
         // Create a method instance.
         GetMethod method = new GetMethod(url);
         LOGGER.info("Invoked " + url);
-        // Provide custom retry handler is necessary
+        if (TESTING){
+            return;
+        }
+        // Providing custom retry handler is necessary
         method.getParams().setParameter(HttpMethodParams.RETRY_HANDLER,
                 new DefaultHttpMethodRetryHandler(3, false));
 

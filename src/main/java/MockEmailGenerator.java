@@ -39,10 +39,8 @@ public class MockEmailGenerator {
                 for(int i=2;i<numberOfQuestions;i++){
                     arr[i] = String.valueOf(addMultiRandomVote());
                 }
-
-                //voteList.add([generateMobileNumber(), " "+ line + " ", addRandomVote())];
                 voteList.add(arr);
-                //System.out.println(Arrays.toString(arr));
+
             }
 
         }
@@ -52,18 +50,18 @@ public class MockEmailGenerator {
                 arr[0] = generateMobileNumber();
                 arr[1] = " " + line + " ";
                 arr[2] = addRandomVote();
-                //voteList.add([generateMobileNumber(), " "+ line + " ", addRandomVote())];
+
                 voteList.add(arr);
-               // System.out.println(arr[0] + arr[1] + arr[2]);
+
             }
         }
         br.close();
-        //System.out.println(voteList);
+
     }
 
     // add a random vote from (1,2,3,4, yes, no, [invalid])    -weighted towards 1 & 2
     private String addRandomVote(){
-        String [] voteArray = {"1","1","1","1","1","2","1", "1", "1", "1","1","1","2","2","3","2","2","4", "5","2","3","3","4", "yes", "no",  "xxx" };
+        String [] voteArray = {"1","1","1","1","1","2","1", "1", "1", "1","1","1","2","2","3","2","2","4", "3","2","3","3","4", "1", "2",  "1" };
         Random rnd = new Random();
         int rndInt = rnd.nextInt(voteArray.length);
         return voteArray[rndInt];

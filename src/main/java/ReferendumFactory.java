@@ -2,6 +2,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.UUID;
@@ -39,16 +40,12 @@ public class ReferendumFactory {
         UUID refID = UUID.randomUUID();
         int numberOfCards = Integer.parseInt(properties.getProperty("numberOfCards"));
         String numFile = properties.getProperty("numsFile");
-        System.out.println(numFile);
         int pinDigits = Integer.parseInt(properties.getProperty("digits"));
         String password1 = properties.getProperty("password1");
         String password2 = properties.getProperty("password2");
         // load card numbers
         registerVoters(refID, numberOfCards, pinDigits, password1, password2, numFile);
-
-
         String refType = properties.getProperty("refType");
-
         ArrayList<Question> questions = loadQuestions(properties);
 
         Referendum referendum;
@@ -87,11 +84,18 @@ public class ReferendumFactory {
     private void registerVoters(UUID refID, int numberOfCards, int pinDigits, String password1, String password2, String numFile) {
         GenerateCardNumbers gcn = new GenerateCardNumbers(refID, password1, password2, numberOfCards, pinDigits);
         //StoreCardNumbers scn = new StoreCardNumbers(refID, gcn.getNumsList());
-        System.out.println(numFile);
+        //System.out.println("numfile=./" + numFile);
+
+
+        ClassLoader loader = ReferendumFactory.class.getClassLoader();
+        URL myURL = loader.getResource(numFile);
+        String path = myURL.getPath();
+        path = path.replaceAll("%20", " ");
+
         StoreCardNumbers scn = null;
-        if(!numFile.equals("")){
+        if(numFile != null && !numFile.isEmpty()){
             try {
-                scn = new StoreCardNumbers(refID, numFile);
+                scn = new StoreCardNumbers(refID, path);
             } catch (IOException e) {
                 LOGGER.error(e.getMessage());
             }

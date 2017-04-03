@@ -47,11 +47,12 @@ public class EmailCollector implements VoteCollector {
 
         session = Session.getDefaultInstance(props, null);
         //session.setDebug(true);
+        Properties secret = PropsLoader.getProperties("secret.properties");
 
         //create the IMAPS store object and connect with the smtp server
         store = session.getStore("imaps");
-        // todo encrypt password in config files
-        store.connect("imap.gmail.com", "handivote.testing@gmail.com", "poppoppop");
+
+        store.connect("imap.gmail.com", secret.getProperty("gmailUser"), secret.getProperty("gmailPassword"));
         return session;
     }
 
@@ -141,7 +142,7 @@ public class EmailCollector implements VoteCollector {
             LOGGER.info("Sending ACK to :" + recipient);
         }
         try {
-            new sendKapowAck(recipient);
+            new SendKapowAck(recipient);
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
         }
@@ -150,9 +151,9 @@ public class EmailCollector implements VoteCollector {
     @Override
     public void collectVotes(UUID refID) {
         ScheduledExecutorService scheduledExecutorService =
-                Executors.newScheduledThreadPool(1);
+                Executors.newScheduledThreadPool(3);
         scheduledExecutorService.scheduleAtFixedRate(() -> {
-            //The repetitive task, say to update Database
+
             collectEmails(refID);
             Validator validator = new Validator(refID, questions);
             validator.validateVoterPIN();

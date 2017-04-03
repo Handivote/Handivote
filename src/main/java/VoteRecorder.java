@@ -17,18 +17,21 @@ public class VoteRecorder implements Runnable {
     private ArrayList<Question> questions;
     public static final Boolean TESTING = true;
     private static Logger LOGGER = LoggerFactory.getLogger(VoteRecorder.class);
+    private int voteCount;
 
 
     public VoteRecorder(UUID refID, ArrayList questions) {
         this.refID = refID;
         this.db = setupDB(refID);
         this.questions = questions;
+        voteCount =0;
     }
 
     public VoteRecorder(UUID refID) {
         this.refID = refID;
         this.db = setupDB(refID);
         this.questions = questions;
+        voteCount=0;
     }
     public void closeDB(){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
@@ -59,14 +62,9 @@ public class VoteRecorder implements Runnable {
 
     public  boolean recordVote(Vote vote){
         HTreeMap<String, String> map = db.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
-        if (vote.getBallot().length>1){
-            validateVoteOptions(vote);
-            //String ballot = vote.ballotToString(vote.getBallot());
-            //System.out.println("recording: " + ballot);
-        }
+
         if (map.containsKey(vote.getVoterID())){
             String [] parts = map.get(vote.getVoterID()).split(" ");
-            System.out.println("record: " +  parts[4]);
             String[] storedBallot = parts[4].split(" ");
             Vote storedVote = new Vote(parts[0],parts[1],Long.parseLong(parts[2]),parts[3],storedBallot);
             if(!Arrays.equals(vote.getBallot(), storedVote.getBallot())){
@@ -78,7 +76,9 @@ public class VoteRecorder implements Runnable {
         }
         map.put(vote.getVoterID(), vote.toString());
         db.commit();
-        LOGGER.debug("Added vote:  " + vote.toString() + " at " + System.currentTimeMillis() );
+        LOGGER.info("Added vote:  " + vote.getVoterID()+ " at " + System.currentTimeMillis() );
+        voteCount++;
+        System.out.println(voteCount);
         return true;
     }
 

@@ -23,8 +23,9 @@ class StoreCardNumbers {
     public StoreCardNumbers(UUID refID, String numbersFile) throws IOException {
         this.refID = refID;
         this.db = setupDB(refID);
-        readFromFile(numbersFile);
+        this.numsList = readFromFile(numbersFile);
         mapCardNumbers();
+
     }
 
     StoreCardNumbers(UUID refID, ArrayList numsList) {
@@ -41,24 +42,15 @@ class StoreCardNumbers {
                 .make();
         return db;
     }
-    void readFromFile(String numFile) throws IOException {
-        String basePath = new File("").getAbsolutePath();
-        System.out.println(basePath);
-
-        String path = new File("emailnums.text")
-                .getAbsolutePath();
-        System.out.println(path);
+    ArrayList readFromFile(String numFile) throws IOException {
         numsList = new ArrayList();
         File file = new File(numFile);
-        System.out.println();
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
         try {
             while (br.readLine() != null) {
-
                 numsList.add(br.readLine());
-
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -68,6 +60,7 @@ class StoreCardNumbers {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return numsList;
 
     }
 

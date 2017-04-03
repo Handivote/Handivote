@@ -1,9 +1,6 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
@@ -77,32 +74,18 @@ public class ReferendumManager {
 
         if (args.length > 0) {
             fName = args[0];
-            System.out.println("opening " + fName);
+            LOGGER.info("opening " + fName);
 
         } else {
             //todo usage instructions passwords etc,.
             fName = "src/main/resources/test.properties";
         }
 
-        Properties properties = getProperties(fName);
+        Properties properties = PropsLoader.getProperties(fName);
         String pattern = (String) properties.get("dates.pattern");
         startDate = DateConverter.convertDates(pattern, (String) properties.get("startDate"));
         endDate = DateConverter.convertDates(pattern, (String) properties.get("endDate"));
         referendumManager.setSchedule(rf, properties, startDate, endDate);
     }
 
-    private static Properties getProperties(String fName) {
-        Properties properties = new Properties();
-
-        File file = new File(fName);
-        FileInputStream fileInput = null;
-        try {
-            fileInput = new FileInputStream(file);
-            properties.load(fileInput);
-            fileInput.close();
-        } catch (IOException e) {
-            e.getStackTrace();
-        }
-        return properties;
-    }
 }

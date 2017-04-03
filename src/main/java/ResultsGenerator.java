@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class VoteCounter {
+public class ResultsGenerator {
     private UUID refID;
     private DB voteDB;
     private ArrayList <String> option1 = new ArrayList<>();
@@ -22,10 +22,10 @@ public class VoteCounter {
     private ArrayList <String> option3 = new ArrayList<>();
     private ArrayList <String> option4 = new ArrayList<>();
     private ArrayList <String> badVotes = new ArrayList<>();
-    private static Logger LOGGER = LoggerFactory.getLogger(VoteCounter.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(ResultsGenerator.class);
     private ArrayList<Question> questions;
 
-    public VoteCounter(UUID refID, ArrayList<Question> questions) {
+    public ResultsGenerator(UUID refID, ArrayList<Question> questions) {
         this.refID = refID;
         this.questions = questions;
 

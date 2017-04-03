@@ -26,14 +26,13 @@ public class SimpleReferendum implements Referendum {
         this.refID = refID;
         setQuestions(questions);
         collector.collectVotes(refID);
-        //Validator validator = new Validator(refID, questions);
-        //validator.validateVoterPIN();
+
     }
 
     @Override
     public void publishResults(UUID refID)
     {
-        VoteCounter vc = new VoteCounter(refID, questions);
+        ResultsGenerator vc = new ResultsGenerator(refID, questions);
         vc.calculateResults();
 
     }

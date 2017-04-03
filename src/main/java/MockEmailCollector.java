@@ -61,7 +61,6 @@ public class MockEmailCollector implements VoteCollector{
 
             // use greenmail to store the message
             user.deliver(message);
-           //System.out.println("delivered message from : " +  message.getFrom()[0].toString());
         }
         // fetch the e-mail via imaps using javax.mail ..
         Properties props = new Properties();
@@ -80,7 +79,6 @@ public class MockEmailCollector implements VoteCollector{
 
         folder.fetch(messages, fetchProfile);
 
-        //System.out.println(folder.getMessageCount());
         return messages;
     }
 
@@ -96,6 +94,7 @@ public class MockEmailCollector implements VoteCollector{
                 String[] ballot = Arrays.copyOfRange(content, 4, content.length);
                 Vote vote = new Vote(content[1], content[2], timestamp, "1", ballot);
                 voteRecorder.recordVote(vote);
+                sendAck(ballots[i].getSubject().toString());
             }
         } catch (IOException | MessagingException | UserException | InterruptedException e) {
             e.printStackTrace();
@@ -108,6 +107,12 @@ public class MockEmailCollector implements VoteCollector{
 
     @Override
     public void sendAck(String recipient) {
+        LOGGER.info("Sending ACK to :" + recipient);
+        try {
+            new SendKapowAck(recipient);
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+        }
 
     }
 }
