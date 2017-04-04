@@ -85,7 +85,7 @@ public class MockEmailCollector implements VoteCollector{
     @Override
     public void collectVotes(UUID refID)  {
         VoteRecorder voteRecorder = new VoteRecorder(refID);
-        Message[] ballots = null;
+        Message[] ballots;
         try {
              ballots = getMails(refID);
             for (int i=0; i<ballots.length; i++){
@@ -94,7 +94,7 @@ public class MockEmailCollector implements VoteCollector{
                 String[] ballot = Arrays.copyOfRange(content, 4, content.length);
                 Vote vote = new Vote(content[1], content[2], timestamp, "1", ballot);
                 voteRecorder.recordVote(vote);
-                sendAck(ballots[i].getSubject().toString());
+                sendAck(ballots[i].getSubject());
             }
         } catch (IOException | MessagingException | UserException | InterruptedException e) {
             e.printStackTrace();

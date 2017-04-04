@@ -11,14 +11,12 @@ import java.util.UUID;
 
 public class Validator {
     private static Logger LOGGER = LoggerFactory.getLogger(Validator.class);
-    private UUID refID;
-    private ArrayList questions;
     private DB voteDB;
     private DB cardsDB;
 
     public Validator(UUID refID, ArrayList questions) {
-        this.refID = refID;
-        this.questions = questions;
+        UUID refID1 = refID;
+        ArrayList questions1 = questions;
         setupDB(refID);
     }
 

@@ -1,10 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
-/**
- * Created by dev on 15/01/17.
- */
 public class GenerateCardNumbersTest {
     @org.junit.Before
     public void setUp() throws Exception {

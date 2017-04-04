@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.UUID;
 
+@SuppressWarnings("ALL")
 public class SimpleReferendum implements Referendum {
     private UUID refID;
     private ArrayList questions;
@@ -29,10 +30,12 @@ public class SimpleReferendum implements Referendum {
 
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public void publishResults(UUID refID)
     {
-        ResultsGenerator vc = new ResultsGenerator(refID, questions);
+        //noinspection unchecked
+        @SuppressWarnings("unchecked") ResultsGenerator vc = new ResultsGenerator(refID, questions);
         vc.calculateResults();
 
     }

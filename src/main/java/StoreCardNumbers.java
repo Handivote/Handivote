@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.UUID;
 
+@SuppressWarnings("ALL")
 class StoreCardNumbers {
 
     private ArrayList numsList;
@@ -42,6 +43,7 @@ class StoreCardNumbers {
                 .make();
         return db;
     }
+    @SuppressWarnings("unchecked")
     ArrayList readFromFile(String numFile) throws IOException {
         numsList = new ArrayList();
         File file = new File(numFile);
@@ -50,6 +52,7 @@ class StoreCardNumbers {
 
         try {
             while (br.readLine() != null) {
+                //noinspection unchecked
                 numsList.add(br.readLine());
             }
         } catch (IOException e) {

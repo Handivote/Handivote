@@ -16,7 +16,6 @@ import java.util.UUID;
 
 public class ResultsGenerator {
     private UUID refID;
-    private DB voteDB;
     private ArrayList <String> option1 = new ArrayList<>();
     private ArrayList <String> option2 = new ArrayList<>();
     private ArrayList <String> option3 = new ArrayList<>();
@@ -96,7 +95,7 @@ public class ResultsGenerator {
 
     @NotNull
     private synchronized HTreeMap<String, String> getVoteStore() {
-        voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
+        DB voteDB = DBMaker.fileDB(refID + ".raw").fileMmapEnable().make();
         LOGGER.info("Opened " + refID + " @" + System.currentTimeMillis());
         return voteDB.hashMap("map", Serializer.STRING, Serializer.STRING).createOrOpen();
     }

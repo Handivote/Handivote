@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
+@SuppressWarnings("ALL")
 public class MockEmailGenerator {
     private int numberOfQuestions;
     private ArrayList voteList = new ArrayList();
@@ -23,14 +24,15 @@ public class MockEmailGenerator {
 
 
 
+    @SuppressWarnings("unchecked")
     private void readNums(String numFile) throws IOException {
         String[] arr;
         File dir = new File(".");
-        File file = null;
+        File file;
         file = new File(dir.getCanonicalPath() + File.separator +numFile);
-        BufferedReader br = null;
+        BufferedReader br;
         br = new BufferedReader(new FileReader(file));
-        String line = null;
+        String line;
         if(numberOfQuestions>1){
             while ((line = br.readLine()) != null) {
                 arr = new String[2+numberOfQuestions];
@@ -39,6 +41,7 @@ public class MockEmailGenerator {
                 for(int i=2;i<numberOfQuestions;i++){
                     arr[i] = String.valueOf(addMultiRandomVote());
                 }
+                //noinspection unchecked
                 voteList.add(arr);
 
             }
@@ -51,6 +54,7 @@ public class MockEmailGenerator {
                 arr[1] = " " + line + " ";
                 arr[2] = addRandomVote();
 
+                //noinspection unchecked
                 voteList.add(arr);
 
             }

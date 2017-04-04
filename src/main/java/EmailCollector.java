@@ -17,7 +17,6 @@ public class EmailCollector implements VoteCollector {
     private static final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 
 
-    private static boolean VERBOSE = true;
     private static boolean TESTING = true;
     private static Session session;
     private static Store store;
@@ -68,7 +67,7 @@ public class EmailCollector implements VoteCollector {
             messages = inbox.search(ft);
             for (Message m : messages) {
                 LOGGER.info(m.getSubject());
-                sendAck(m.getSubject().toString());
+                sendAck(m.getSubject());
             }
         } catch (MessagingException e) {
             LOGGER.error( " " + e.getMessage());
@@ -89,7 +88,7 @@ public class EmailCollector implements VoteCollector {
 
     public void collectEmails(UUID refID)  {
         VoteRecorder voteRecorder = new VoteRecorder(refID, questions);
-        Message[] ballots = null;
+        Message[] ballots;
         try {
             ballots = readMessages(refID);
             for (int i=0; i<ballots.length; i++){
@@ -138,6 +137,7 @@ public class EmailCollector implements VoteCollector {
 
     @Override
     public void sendAck(String recipient) {
+        boolean VERBOSE = true;
         if (VERBOSE) {
             LOGGER.info("Sending ACK to :" + recipient);
         }
