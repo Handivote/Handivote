@@ -40,7 +40,7 @@ public class SendKapowAck {
         client.getHostConfiguration().setProxy("wwwcache.dcs.gla.ac.uk", 8080);
         Properties props = System.getProperties();
 
-        // Create a method instance.
+        // Create a method instance.ls
         GetMethod method = new GetMethod(url);
         LOGGER.info("Invoked " + url);
         if (TESTING){

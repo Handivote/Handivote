@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="handivote" />
         <module name="new_handivote" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="handivote" target="1.8" />
       <module name="new_handivote" target="1.8" />
     </bytecodeTargetLevel>
   </component>
