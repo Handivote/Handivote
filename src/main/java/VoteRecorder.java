@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.UUID;
 
+@SuppressWarnings("ALL")
 public class VoteRecorder implements Runnable {
     private UUID refID;
     private DB db;
@@ -20,9 +21,11 @@ public class VoteRecorder implements Runnable {
     private int voteCount;
 
 
+    @SuppressWarnings("unchecked")
     public VoteRecorder(UUID refID, ArrayList questions) {
         this.refID = refID;
         this.db = setupDB(refID);
+        //noinspection unchecked
         this.questions = questions;
         voteCount =0;
     }

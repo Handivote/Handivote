@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.UUID;
 
 
+@SuppressWarnings("ALL")
 public class SimpleTestCollector implements VoteCollector {
     private static Logger LOGGER = LoggerFactory.getLogger(SimpleTestCollector.class);
     private int numberOfVotes;
@@ -26,12 +27,14 @@ public class SimpleTestCollector implements VoteCollector {
     }
 
 
+    @SuppressWarnings("unchecked")
     @Override
     public synchronized void collectVotes(UUID refID) {
         VoteRecorder voteRecorder = new VoteRecorder(refID, questions);
-         ArrayList<String[]> ballots = null;
+         ArrayList<String[]> ballots;
          MockEmailGenerator mockEmailGenerator = new MockEmailGenerator();
         try {
+            //noinspection unchecked
             ballots = mockEmailGenerator.createMockEmailList(refID.toString() + "_nums.txt");
 
             for (int i=0; i<ballots.size(); i++){

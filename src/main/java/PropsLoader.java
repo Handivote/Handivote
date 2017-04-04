@@ -9,7 +9,7 @@ public class PropsLoader {
         Properties properties = new Properties();
 
         File file = new File(fName);
-        FileInputStream fileInput = null;
+        FileInputStream fileInput;
         try {
             fileInput = new FileInputStream(file);
             properties.load(fileInput);

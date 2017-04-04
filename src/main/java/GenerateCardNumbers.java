@@ -22,7 +22,6 @@ class GenerateCardNumbers
     }
 
     private String password2;
-    private long voteridbase;
     private UUID refID;
     private ArrayList <String> numsList;
     
@@ -37,7 +36,7 @@ class GenerateCardNumbers
         this.refID = refID;
         this.password1 = password1;
         this.password2 = password2;
-        voteridbase = hash(password1);
+        long voteridbase = hash(password1);
         numsList = new ArrayList<String>();
         genCardNumbers(voteridbase, numCards, digits);
 

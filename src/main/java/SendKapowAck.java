@@ -14,7 +14,6 @@ import java.util.Properties;
 
 public class SendKapowAck {
     private static Logger LOGGER = LoggerFactory.getLogger(SendKapowAck.class);
-    private static boolean TESTING = true;
     Properties secret = PropsLoader.getProperties("secret.properties");
 
     public SendKapowAck(String recipient) {
@@ -29,6 +28,7 @@ public class SendKapowAck {
 
         LOGGER.info(url);
 
+        boolean TESTING = true;
         if (TESTING) {
             url = "http://www.kapow.co.uk/scripts/sendsms.php?" +
                     "username="+ "kapowUser"+ "kapowPassword" + "&mobile=" + recipient +

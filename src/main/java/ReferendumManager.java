@@ -67,8 +67,8 @@ public class ReferendumManager {
 
     public static void main(String[] args) {
         ReferendumManager referendumManager = new ReferendumManager();
-        Date startDate = null;
-        Date endDate = null;
+        Date startDate;
+        Date endDate;
         ReferendumFactory rf = new ReferendumFactory();
         String fName = "";
 
